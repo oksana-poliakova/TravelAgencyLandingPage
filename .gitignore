@@ -1,0 +1,26 @@
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+jspm_packages/
+
+# Compiled CSS
+public/assets/css/styles.css
+
+# Compiled Less
+*.less.css
+
+# Misc
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+
+# VS Code settings
+.vscode/

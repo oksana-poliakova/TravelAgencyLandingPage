@@ -1,0 +1,49 @@
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0 0 10px;
+}
+
+p {
+  margin: 0 0 15px;
+}
+
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+ul, ol {
+  margin: 0 0 15px 25px;
+  padding: 0;
+}
+
+li {
+  margin: 0 0 5px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
