@@ -1,5 +1,14 @@
+@import 'variables';
+
 @mixin border-radius($radius) {
     -webkit-border-radius: $radius;
     -moz-border-radius: $radius;
-    border-radius: $radius;
+    border-radius: $radius; 
+}
+ 
+@mixin main-subtitle {
+    font-size: 18px;
+    font-weight: 800;
+    color: $subtitle-color;
+    text-align: center;
 }
