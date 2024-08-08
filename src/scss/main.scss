@@ -168,7 +168,6 @@
             .services-header {
                 h4 {
                     text-align: center;
-                    padding-bottom: 1.5rem;
                 }
             }
             .services-content {
@@ -182,11 +181,14 @@
                     display: flex;
                     flex-direction: column;   
                     justify-content: center;  
-                    align-items: center;      
+                    align-items: center;    
+                    border-radius: 10px;  
                     text-align: center;      
                     padding: 20px;     
                     transition: box-shadow 0.3s;
                     cursor: pointer; 
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    transition: transform 0.3s, box-shadow 0.3s;
 
                     img {
                         max-width: 100%;
@@ -202,12 +204,211 @@
                     }
 
                     &:hover {
+                        transform: translateY(-10px);
                         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 
                                     0 6px 20px rgba(0, 0, 0, 0.1);
-                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+
+        .destinations {            
+            .destinations-header {
+                h4 {
+                    text-align: center;
+                }
+
+                h2 {
+
+                }
+
+            }
+            .destinations-content {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 4rem;
+                justify-content: center;
+                padding: 1.2rem;
+
+                .destination-card {
+                    border-radius: 10px;
+                    overflow: hidden;
+                    text-align: center;
+                    padding: 1.2rem;
+                    width: calc(33.333% - 4rem); /* Три карточки в ряд с отступами */
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    transition: transform 0.3s, box-shadow 0.3s;
+                    cursor: pointer;
+
+                    .img-container {
+                        width: 100%;
+                        height: 18rem; 
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        margin-bottom: 1rem;
+                    }
+                    .destination-card-info {
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 0 10px;
+                        align-items: center;
+
+                        .title-country {
+
+                        }
+                        .title-price {
+
+                        }
+                    }
+
+                    &:hover {
+                        transform: translateY(-10px);
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 
+                                    0 6px 20px rgba(0, 0, 0, 0.1);
+                    }
+
+                    .duration {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        span:first-child {
+                            font-size: 1rem;
+                            padding-left: 5px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .steps {
+            padding: 4rem 0;
+            
+            .steps-content {
+                
+
+                .steps-header {
+                    width: 50%;
+
+                    h2 {
+                        text-align: left;
+                    }
+                }
+            }
+
+            .steps-block {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                padding: 4rem 0;
+                position: relative;
+
+                .steps-list {
+                    width: 25%;
+
+                    .step-item {
+                        display: flex;
+                        align-items: flex-start;
+                        gap: 20px;
+                        padding-bottom: 2.5rem;
+
+                        .step-icon {
+                            img {
+                                
+                            }
+                        }
+                        .step-info {
+                    
+                            h3 {
+                                margin-bottom: 0.5rem;
+                                font-size: 1rem;
+                            }
+                            p {
+
+                            }
+                        }
                     }
                 }
 
+                .steps-image-container {
+                    width: 32%;
+                    position: relative;
+                    top: -8rem;
+
+                    .trip-card {
+                        display: flex;
+                        position: relative;
+                        box-sizing: border-box;
+                        margin-right: 7rem;
+                        flex-direction: column;
+                        align-items: center;
+                        background-color: #fff;
+                        border-radius: 25px;
+                        box-shadow: 0px -8px 20px rgba(0, 123, 255, 0.3), 8px 0px 20px rgba(0, 123, 255, 0.3);
+                        overflow: hidden;
+                        -webkit-box-shadow: 22px -7px 142px -24px rgba(89,177,230,0.68);
+                        -moz-box-shadow: 22px -7px 142px -24px rgba(89,177,230,0.68);
+                        box-shadow: 22px -7px 142px -24px rgba(89,177,230,0.68);
+                        
+                        .trip-image {
+                            display: flex;
+                            justify-content: center;
+                            width: 90%;
+                            height: 15rem; 
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                        }
+
+                        .trip-info {
+                            align-self: flex-start;
+                            padding: 0 2rem 1.25rem 1.25rem;
+                            p {
+                                font-size: 1.1rem;
+                                font-weight: 500;
+                                color: $primary-color;
+                            }
+
+                            .trip-icons {
+                                display: flex;
+                                gap: 20px;
+                                margin-top: 1rem;
+
+                                span {
+                                    color: $gray;
+                                    background-color: $light-gray;
+                                    padding: 5px;
+                                    font-size: 14px;
+                                    border-radius: 100%;
+                                }
+                            }
+
+                            .registered-people {
+                                display: flex;
+                                align-items: center;
+                                padding-top: 1rem;
+                                span {
+                                    color: $gray;
+                                    font-size: 1rem;
+                                    font-weight: 500;
+
+                                    &:first-child {
+                                        padding-right: 8px;
+                                    }
+
+                                    &:last-child {
+                                        color: #4152CA;
+                                        position: absolute;
+                                        right: 20px;
+                                        bottom: 20px;
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }

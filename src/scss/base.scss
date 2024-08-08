@@ -1,8 +1,9 @@
 @import 'variables';
 
-// Typography
-body {
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 // Links
@@ -86,7 +87,7 @@ li {
     font-size: 1.2rem;
     font-weight: 500;
     color: $primary-color;
-    margin-bottom: 1rem;
+    padding-bottom: 2.5rem;
   }
 
   .main-text {
