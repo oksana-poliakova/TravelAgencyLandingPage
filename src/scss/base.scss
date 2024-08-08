@@ -2,28 +2,7 @@
 
 // Typography
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-}
-
-h1,
-h2,
-h3, 
-h4,
-h5,
-h6 {
-    font-weight: bold; 
-    color: #000;
-    line-height: 1.2; 
-    margin: 0 0 10px;
-}
-
-p {
-    margin: 0 0 15px;
 }
 
 // Links
@@ -75,3 +54,46 @@ li {
     color: $primary-color;
     line-height: 1.5; 
 }
+
+.heading-h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 700;
+    color: $primary-color;
+    margin-bottom: 1rem;
+  }
+
+  .heading-h2 {
+    font-family: 'Volkhov', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: $primary-color;
+    text-align: center;
+    margin-bottom: 0.75rem;
+  }
+
+  .heading-h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: $primary-color;
+    margin-bottom: 1rem;
+  }
+
+  .heading-h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: $primary-color;
+    margin-bottom: 1rem;
+  }
+
+  .main-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: $primary-color;
+    line-height: 1.5;
+  }
+
+  

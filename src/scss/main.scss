@@ -7,6 +7,8 @@
 @import 'mixins';
 
 .overlay {
+    position: relative;
+
     .main-bg-image {
         background-size: cover;
         background-repeat: no-repeat;
@@ -20,11 +22,11 @@
         max-width: 1400px;
         margin: 0 auto;
         position: relative;
-        padding-top: 55px;
+        padding-top: 3.5rem;
         z-index: 100;
     
         .header {
-            padding-bottom: 20px;
+            padding-bottom: 1.2rem;
         
     
             .navbar {
@@ -43,13 +45,12 @@
                     .nav-links {
                         display: flex;
                         li {
-                            padding-right: 55px;
+                            padding-right: 2rem;
                             
                             a {
-                                font-size: 17px;
+                                font-size: 1.2rem;
                             }
                         }
-    
                     }
     
                     .auth-buttons {
@@ -57,18 +58,17 @@
                         align-items: center;
                         
                         button {
-                            padding-right: 55px;
-                            font-size: 17px;
+                            padding-right: 2rem;
+                            font-size: 1rem;
                         }
     
                         .btn-signup {
                             border-radius: 10px;
                             border: 1px solid #000;
                             padding: 10px 25px;
-                            margin-right: 55px;
-                            font-size: 17px;
+                            margin-right: 3.5rem;
+                            font-size: 1rem;
                         }
-                
                     }
     
                     .language-selector {
@@ -76,14 +76,13 @@
                         align-items: center;
 
                         span {
-                            font-size: 17px;
+                            font-size: 1rem;
                             margin-right: 5px;
                         }
 
                         button {
-    
                             span {
-                                font-size: 18px;
+                                font-size: 1.2rem;
                             }
                         }
                     }
@@ -94,27 +93,28 @@
     
         .main-section {
             display: flex;
-            padding-top: 80px;
+            padding-top: 5rem;
+            padding-bottom: 5rem;
     
             .main-content {
                 max-width: 40%;
 
                 .main-subtitle {
-                    font-size: 20px;
+                    font-size: 1.25rem;
                     color: $primary-red;
                     text-transform: uppercase;
                     font-weight: bold;
                 }
 
                 .main-title {
-                    font-size: 80px;
+                    font-size: 5rem;
                     font-weight: bold;
                     color: $primary-color;
                     padding: 60px 0;
                 }
 
                 .main-description {
-                    padding-bottom: 60px;
+                    padding-bottom: 3.75rem;
                 }
 
                 .main-btns {
@@ -130,7 +130,7 @@
                         color: #fff;
                         font-weight: bold;
                         border-radius: 10px;
-                        font-size: 18px;
+                        font-size: 1.2rem;
                         padding: 25px 45px;
                     }
 
@@ -147,12 +147,11 @@
                         span {
                             color: #fff;
                             font-size: 30px;
-                        }
-                        
+                        }                     
                     }
 
                     span {
-                        font-size: 18px;
+                        font-size: 1.1rem;
                     }
                 }
             }
@@ -164,6 +163,52 @@
                 }
             }
         }
+
+        .services {
+            .services-header {
+                h4 {
+                    text-align: center;
+                    padding-bottom: 1.5rem;
+                }
+            }
+            .services-content {
+                display: flex;
+                justify-content: center; 
+                align-items: center;     
+                gap: 3rem; 
+                padding: 4rem 0;
+
+                .service-item {
+                    display: flex;
+                    flex-direction: column;   
+                    justify-content: center;  
+                    align-items: center;      
+                    text-align: center;      
+                    padding: 20px;     
+                    transition: box-shadow 0.3s;
+                    cursor: pointer; 
+
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                        margin-bottom: 15px;
+                    }
+                    h3 {
+                        text-align: center;
+                        padding: 1.25rem 0;
+                    }
+                    p {
+                        text-align: center;
+                    }
+
+                    &:hover {
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 
+                                    0 6px 20px rgba(0, 0, 0, 0.1);
+                        border-radius: 10px;
+                    }
+                }
+
+            }
+        }
     }
-    
 }
