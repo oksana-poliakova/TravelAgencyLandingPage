@@ -25,141 +25,141 @@
         padding-top: 3.5rem;
         z-index: 100;
     
-        .header {
-            padding-bottom: 1.2rem;
+        .header-wrapper {
+            height: 100vh;
+
+            .header {
+                padding-bottom: 1.2rem;
+            
+                .navbar {
+                    display: flex; 
+                    justify-content: space-between;
+                    align-items: center;
         
-    
-            .navbar {
-                display: flex; 
-                justify-content: space-between;
-                align-items: center;
-    
-                .logo {
-    
-                }
-    
-                .navigation {
-                    display: flex;
-                    align-items: center;
-                   
-                    .nav-links {
+                    .navigation {
                         display: flex;
-                        li {
-                            padding-right: 2rem;
+                        align-items: center;
+                       
+                        .nav-links {
+                            display: flex;
+    
+                            li {
+                                padding-right: 2rem;
+                                
+                                a {
+                                    @include nav-link-style;
+                                    border-bottom: 2px solid transparent;
+                                    padding-bottom: 4px;
+                                    transition: border-bottom-color 0.3s ease;;
+    
+                                    &:hover {
+                                        border-bottom: 2px solid $dark-grey;  
+                                    }
+                                }
+                            }
+                        }
+        
+                        .auth-buttons {
+                            display: flex;
+                            align-items: center;
+                            margin-left: 1.2rem;
                             
-                            a {
-                                font-size: 1.2rem;
+                            button {
+                                padding-right: 2rem;
+                                @include nav-link-style;
+                            }
+        
+                            .btn-signup {
+                                border-radius: 10px;
+                                border: 1px solid #000;
+                                padding: 10px 25px;
+                                margin-right: 3.5rem;
+                                font-size: 1rem;
+                                @include nav-link-style;
                             }
                         }
-                    }
+        
+                        .language-selector {
+                            display: flex;
+                            align-items: center;
     
-                    .auth-buttons {
-                        display: flex;
-                        align-items: center;
-                        
-                        button {
-                            padding-right: 2rem;
-                            font-size: 1rem;
-                        }
-    
-                        .btn-signup {
-                            border-radius: 10px;
-                            border: 1px solid #000;
-                            padding: 10px 25px;
-                            margin-right: 3.5rem;
-                            font-size: 1rem;
-                        }
-                    }
-    
-                    .language-selector {
-                        display: flex;
-                        align-items: center;
-
-                        span {
-                            font-size: 1rem;
-                            margin-right: 5px;
-                        }
-
-                        button {
                             span {
-                                font-size: 1.2rem;
+                                font-size: 1rem;
+                                margin-right: 7px;
+                                @include nav-link-style;
+                                cursor: pointer;
                             }
+    
+                            button {
+                                span {
+                                    font-size: 1.2rem;
+                                }
+                            }
+                        }           
+                    }
+                }
+            }
+        
+            .main-section {
+                display: flex;
+                padding-top: 5rem;
+                padding-bottom: 5rem;
+        
+                .main-content {
+                    max-width: 40%;
+    
+                    .main-subtitle {
+                        font-size: 1.25rem;
+                        color: $primary-red;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                    }
+    
+                    .main-title {
+                        font-size: 5rem;
+                        font-weight: bold;
+                        color: $primary-color;
+                        padding: 60px 0;
+                    }
+    
+                    .main-description {
+                        padding-bottom: 3.75rem;
+                    }
+    
+                    .main-btns {
+                        display: flex;
+                        align-items: center;
+    
+                        .get-info-btn {
+                            @include main-buttons;
+                        }
+    
+                        .play-btn {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: $primary-red;
+                            border-radius: 100%;
+                            width: 60px;
+                            height: 60px;
+                            margin: 0 55px;
+    
+                            span {
+                                color: #fff;
+                                font-size: 30px;
+                            }                     
+                        }
+    
+                        span {
+                            font-size: 1.1rem;
                         }
                     }
-                
                 }
-            }
-        }
-    
-        .main-section {
-            display: flex;
-            padding-top: 5rem;
-            padding-bottom: 5rem;
-    
-            .main-content {
-                max-width: 40%;
-
-                .main-subtitle {
-                    font-size: 1.25rem;
-                    color: $primary-red;
-                    text-transform: uppercase;
-                    font-weight: bold;
-                }
-
-                .main-title {
-                    font-size: 5rem;
-                    font-weight: bold;
-                    color: $primary-color;
-                    padding: 60px 0;
-                }
-
-                .main-description {
-                    padding-bottom: 3.75rem;
-                }
-
-                .main-btns {
-                    display: flex;
-                    align-items: center;
-
-                    .btn { 
-                        
+        
+                .main-image {      
+                    img {
+                        padding-top: -100px;
                     }
-
-                    .get-info-btn {
-                        background-color: $orange-color;
-                        color: #fff;
-                        font-weight: bold;
-                        border-radius: 10px;
-                        font-size: 1.2rem;
-                        padding: 25px 45px;
-                    }
-
-                    .play-btn {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        background-color: $primary-red;
-                        border-radius: 100%;
-                        width: 60px;
-                        height: 60px;
-                        margin: 0 55px;
-
-                        span {
-                            color: #fff;
-                            font-size: 30px;
-                        }                     
-                    }
-
-                    span {
-                        font-size: 1.1rem;
-                    }
-                }
-            }
-    
-            .main-image {
-                
-                img {
-                    padding-top: -100px;
                 }
             }
         }
@@ -185,20 +185,21 @@
                     border-radius: 10px;  
                     text-align: center;      
                     padding: 20px;     
-                    transition: box-shadow 0.3s;
                     cursor: pointer; 
                     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                    transition: transform 0.3s, box-shadow 0.3s;
+                    transition: transform 0.3s ease, box-shadow 0.3s;
 
                     img {
                         max-width: 100%;
                         height: auto;
                         margin-bottom: 15px;
                     }
+
                     h3 {
                         text-align: center;
                         padding: 1.25rem 0;
                     }
+
                     p {
                         text-align: center;
                     }
@@ -217,12 +218,8 @@
                 h4 {
                     text-align: center;
                 }
-
-                h2 {
-
-                }
-
             }
+
             .destinations-content {
                 display: flex;
                 flex-wrap: wrap;
@@ -248,18 +245,12 @@
                         background-position: center;
                         margin-bottom: 1rem;
                     }
+
                     .destination-card-info {
                         display: flex;
                         justify-content: space-between;
                         padding: 0 10px;
                         align-items: center;
-
-                        .title-country {
-
-                        }
-                        .title-price {
-
-                        }
                     }
 
                     &:hover {
@@ -286,8 +277,6 @@
             padding: 4rem 0;
             
             .steps-content {
-                
-
                 .steps-header {
                     width: 50%;
 
@@ -313,19 +302,10 @@
                         gap: 20px;
                         padding-bottom: 2.5rem;
 
-                        .step-icon {
-                            img {
-                                
-                            }
-                        }
                         .step-info {
-                    
                             h3 {
                                 margin-bottom: 0.5rem;
                                 font-size: 1rem;
-                            }
-                            p {
-
                             }
                         }
                     }
@@ -364,6 +344,7 @@
                         .trip-info {
                             align-self: flex-start;
                             padding: 0 2rem 2.5rem 1.25rem;
+                            
                             p {
                                 font-size: 1.1rem;
                                 font-weight: 500;
@@ -388,6 +369,7 @@
                                 display: flex;
                                 align-items: center;
                                 padding-top: 1rem;
+
                                 span {
                                     color: $gray;
                                     font-size: 1rem;
@@ -426,27 +408,32 @@
                             gap: 20px;
                             align-items: center;
                             margin-bottom: 1rem;
+
                             .ongoing-text {
                                 h4 {
                                     color: $gray;
                                     font-size: 1rem;
                                     font-weight: 600;
                                 }
+
                                 p {
                                     font-size: 1.15rem;
                                     font-weight: 700;
                                     padding: 1rem 0;
                                 }
+
                                 span {
                                     font-size: 1rem;
                                     font-weight: 700;
                                 }
+
                                 .percent {
                                     font-size: 1rem;
                                     color: #8A79DF;
                                 }
                             }
                         }
+
                         .progress-container {
                             width: 100%;
                             background-color: #E0E0E0;
@@ -461,6 +448,7 @@
                                 background-color: #8e7cc3;
                                 border-radius: 10px 0 0 10px;
                             }
+
                             &::after {
                                 content: '';
                                 position: absolute;
@@ -483,10 +471,6 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-
-                img {
-
-                }
             }
         }
 
@@ -534,18 +518,15 @@
                             position: relative; 
     
                             input {
-    
-                                padding-left: 50px;
+                                padding-left: 60px;
                                 height: 4rem;
                                 width: 60%;
                                 border-radius: 8px;
                                 border: 1px solid #ddd;
                                 outline: none;
                                 width: 60%;
-                                // padding-left: 50px;
-                                // font-size: 16px;
-                                // flex-grow: 1;
                             }
+
                             span { 
                                 position: absolute;
                                 top: 50%;
@@ -554,22 +535,12 @@
                                 font-size: 24px;
                                 color: #b0b0b0;
                             }
+
                             .submit-btn {
+                                @include main-buttons;
                                 padding: 0 3.5rem;
-                                background-color: #ff7e6b;
-                                border: none;
-                                border-radius: 8px;
-                                color: #fff;
-                                font-size: 1rem;
-                                font-weight: 600;
                                 margin-left: 1rem;
-                                cursor: pointer;
                                 height: 4rem;
-                                transition: background-color 0.3s;
-    
-                                &:hover {
-                                    background-color: #ff665a;
-                                }
                             }
                         }
                     }
@@ -662,7 +633,6 @@
                                     height: 40px;
                                     transition: transform 0.3s ease;
                         
-
                                     &:hover {
                                         transform: scale(1.05);        
                                     }
