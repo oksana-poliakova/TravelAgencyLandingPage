@@ -510,6 +510,13 @@
                         right: -15px;
                         z-index: 35;
                     }
+
+                    .decor-img {
+                        position: absolute;
+                        bottom: -70px;
+                        right: -100px;
+                        z-index: 37;
+                    }
     
                     h2 {
                         font-size: 30px;
@@ -563,6 +570,34 @@
     
                                 &:hover {
                                     background-color: #ff665a;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer {
+            .footer-wrapper {
+                .logo-footer {
+                    img {
+
+                    }
+                    p {
+
+                    }
+                }
+
+                .footer-links {
+                    .footer-column {
+                        h3 {
+
+                        }
+                        ul {
+                            li {
+                                a {
+                                    
                                 }
                             }
                         }
