@@ -565,7 +565,6 @@
                                 margin-left: 1rem;
                                 cursor: pointer;
                                 height: 4rem;
-    
                                 transition: background-color 0.3s;
     
                                 &:hover {
@@ -579,30 +578,104 @@
         }
 
         .footer {
+            padding: 0 4rem;
+            
             .footer-wrapper {
+                display: flex;
+                justify-content: space-around;
+
                 .logo-footer {
+                    text-align: center;
+                    margin-bottom: 1.2rem;
+                    flex-basis: 20%;
+
                     img {
-
-                    }
-                    p {
-
+                        margin-bottom: 2rem;
                     }
                 }
 
                 .footer-links {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 2rem;
+                    gap: 5rem;
+
                     .footer-column {
                         h3 {
-
+                            padding-bottom: 1.2rem;
                         }
+
                         ul {
                             li {
+                                margin-bottom: 0.5rem;
+
                                 a {
-                                    
+                                    color: $dark-grey;
+                                    font-size: 1.2rem;
+                                    line-height: 1.2rem;
+                                }
+                            }
+                        }
+                    }
+
+                    .footer-social {
+                        text-align: center;
+
+                        .social-icons {
+                            margin-bottom: 1rem;
+
+                            a {
+                                margin: 0 1rem;
+                                display: inline-flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 60px;              
+                                height: 60px;            
+                                background-color: #fff;   
+                                border-radius: 50%;        
+                                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); 
+                                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                                
+                                span {
+                                    font-size: 24px; 
+                                }
+
+                                &:hover {
+                                    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); 
+                                    transform: scale(1.05);                      
+                                }
+                            }
+                        }
+
+                        h3 {
+                            padding: 5px 0;
+                            color: $dark-grey;
+                        }
+
+                        .app-buttons {
+                            display: block;
+
+                            a {
+                                margin: 0 0.5rem;
+
+                                img {
+                                    height: 40px;
+                                    transition: transform 0.3s ease;
+                        
+
+                                    &:hover {
+                                        transform: scale(1.05);        
+                                    }
                                 }
                             }
                         }
                     }
                 }
+            }
+
+            .footer-credits {
+                padding: 4rem 0;
+                text-align: center;
             }
         }
     }
