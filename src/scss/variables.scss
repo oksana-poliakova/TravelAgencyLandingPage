@@ -19,3 +19,13 @@ $base-margin: 10px;
 $base-font-size: 16px;
 $heading-font-family: 'Arial', sans-serif;
 $body-font-family: 'Helvetica', sans-serif;
+
+// Media breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// Calculate breakpoints minus 0.02px to avoid overlapping
+$breakpoint-lg-minus: $breakpoint-lg - 0.02px;
+$breakpoint-xl-minus: $breakpoint-xl - 0.02px;

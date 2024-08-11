@@ -1,0 +1,21 @@
+@import 'variables';
+
+/* Styles for small devices (phones, less than 576px) */
+@media (max-width: $breakpoint-sm) { 
+
+}
+
+/* Styles for medium devices (tablets, 768px and up to 991.98px) */
+@media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg-minus) { 
+
+}
+
+/* Styles for large devices (desktops, 992px and up to 1199.98px) */
+@media (min-width: $breakpoint-lg) and (max-width: $breakpoint-xl-minus) { 
+
+}
+
+/* Styles for extra large devices (large desktops, 1200px and up) */ 
+@media (min-width: $breakpoint-xl) {
+     
+}
