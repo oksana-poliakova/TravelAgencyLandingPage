@@ -1,21 +1,300 @@
 @import 'variables';
 
-/* Styles for small devices (phones, less than 576px) */
-@media (max-width: $breakpoint-sm) { 
+/* Styles for devices with max-width 1200px (large desktops and below) */
+@media (max-width: $breakpoint-xl) {
+
+    .heading-h3 {
+        font-size: 1.1rem;
+    }
+
+    .heading-h4 {
+        font-size: 1.2rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .overlay {
+        .container {
+            max-width: 1000px;
+
+            .header-wrapper {
+                .header {
+                    padding-bottom: 1.5rem;
+
+                    .navbar {
+                        .navigation {
+                            .nav-links {
+                                li {
+                                    padding-right: 1.5rem;
+
+                                    a {
+                                        padding-bottom: 3px;
+                                        font-size: 1rem;
+                                    }
+                                }
+                            }
+
+                            .auth-buttons {
+                                margin-left: 1rem;
+
+                                button {
+                                    padding-right: 1.5rem;
+                                    
+                                }
+
+                                .btn-signup {
+                                    padding: 8px 20px;
+                                    margin-right: 2.5rem;
+                                }
+                            }
+
+                            .language-selector {
+                                span {
+                                    margin-right: 5px;
+                                    font-size: 1rem;
+                                }
+
+                                button {
+                                    span {
+                                        font-size: 1rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .main-section {
+                    padding-top: 3rem;
+
+                    .main-content {
+                        max-width: 60%;
+
+                        .main-title {
+                            font-size: 4rem;
+                            padding: 50px 0 30px 0;
+                        }
+
+                        .main-description {
+                            padding-bottom: 2.5rem;
+                        }
+
+                        .main-btns {
+                            .get-info-btn {
+                            }
+
+                            .play-btn {
+                                margin-left: 50px;
+
+                                span {
+                                   
+                                }
+                            }
+
+                            span {
+                                
+                            }
+                        }
+                    }
+
+                    .main-image {
+                        img {
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+
+            .services {
+                .services-content {
+                    gap: 2rem; 
+                    padding: 4rem 0;
+                    align-items: flex-start;
+
+                    .service-item {
+                        min-height: 320px;
+                    }
+                }
+            }
+
+            .destinations {
+                .destinations-content {
+                    gap: 3rem;
+                    padding: 1rem;
+
+                    .destination-card {
+                        width: 30%;
+
+                        .img-container {
+                            height: 15rem;
+                        }
+
+                        .destination-card-info {
+                            h4 {
+                                padding-bottom: 1.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .steps {
+                padding: 3rem 0;
+
+                .steps-content {
+                    .steps-header {
+                        margin: 0 auto;
+    
+                        h2, h4 {
+                            text-align: center;
+                        }
+                    }
+                }
+
+                .steps-block {
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+
+
+                    .steps-list {
+                        width: 40%;
+                        margin-bottom: 2rem;
+                    }
+
+                    .steps-image-container {
+                        width: 40%;
+                        top: 0;
+
+                        .trip-card {
+                            margin-right: 0;
+
+                            .trip-info {
+                                p {
+                                    width: 80%;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .ongoing-trip {
+                    margin-top: 10px;
+
+                    .ongoing-info {
+                        display: flex;
+                        gap: 20px;
+                        align-items: center;
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+
+            .reviews {
+                gap: 3rem;
+
+                .reviews-header {
+                    .pagination-dots {
+                        margin-top: 3rem;
+                    }
+                }
+
+                .review-content {
+                    flex-direction: column;
+
+                    .review-card {
+                        width: 80%;
+
+                        .slider-arrows {
+                        }
+                    }
+                }
+            }
+
+            .subscribe {
+                padding: 0 0 4rem 0;
+
+                .subscribe-wrapper {
+                    max-width: 1000px;
+                    .subscribe-content {
+                        padding: 3rem;
+
+                        .subscribe-form {
+                            .input-wrapper {
+                                span {
+                                    left: 100px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .footer {
+                padding: 3rem 0;
+
+                .footer-wrapper {
+                
+                    .footer-links {
+                        gap: 3rem;
+                        margin-bottom: 2rem;
+
+                        .footer-column {
+                            text-align: center;
+
+                            h3 {
+                                padding-bottom: 1rem;
+                            }
+
+                            ul {
+                                li {
+                                    a {
+                                        font-size: 1rem;
+                                    }
+                                }
+                            }
+                        }
+
+                        .footer-social {
+                            .social-icons {
+                                margin-bottom: 1rem;
+
+                                a {
+                                    width: 50px;
+                                    height: 50px;
+
+                                    span {
+                                        font-size: 20px;
+                                    }
+                                }
+                            }
+
+                            .app-buttons {
+                                img {
+                                    height: 35px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .footer-credits {
+                    padding: 1.5rem 0 1rem 0;
+                }
+            }
+        }
+    }
+}
+
+/* Styles for devices with max-width 900px (tablets and smaller desktops) */
+@media (max-width: $breakpoint-lg) {
 
 }
 
-/* Styles for medium devices (tablets, 768px and up to 991.98px) */
-@media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg-minus) { 
+/* Styles for devices with max-width 600px (small tablets and large phones) */
+@media (max-width: $breakpoint-md) {
 
 }
 
-/* Styles for large devices (desktops, 992px and up to 1199.98px) */
-@media (min-width: $breakpoint-lg) and (max-width: $breakpoint-xl-minus) { 
+/* Styles for mobile devices with max-width 400px (small mobile phones) */
+@media (max-width: $breakpoint-sm) {
 
-}
-
-/* Styles for extra large devices (large desktops, 1200px and up) */ 
-@media (min-width: $breakpoint-xl) {
-     
 }
