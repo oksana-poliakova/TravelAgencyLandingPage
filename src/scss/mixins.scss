@@ -11,9 +11,9 @@
     color: $dark-grey;
     font-weight: 700;
 
-    @media (max-width: $breakpoint-xl) {
-        font-size: 1rem;
-    }
+    // @media (max-width: $breakpoint-xl) {
+    //     font-size: 1rem;
+    // }
 }
 
 @mixin main-buttons {
@@ -32,7 +32,7 @@
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
     }
 
-    @media (max-width: $breakpoint-xl) {
-        font-size: 1rem;
-    }
+    // @media (max-width: $breakpoint-xl) {
+    //     font-size: 1rem;
+    // }
 }

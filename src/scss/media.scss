@@ -1,7 +1,7 @@
 @import 'variables';
 
-/* Styles for devices with max-width 1200px (large desktops and below) */
-@media (max-width: $breakpoint-xl) {
+/* Styles for devices with min-width 1050 max-width 1200px (large desktops and below) */
+@media (max-width: $breakpoint-lg) {
 
     .heading-h3 {
         font-size: 1.1rem;
@@ -84,14 +84,6 @@
 
                             .play-btn {
                                 margin-left: 50px;
-
-                                span {
-                                   
-                                }
-                            }
-
-                            span {
-                                
                             }
                         }
                     }
@@ -173,17 +165,19 @@
                                 }
                             }
                         }
-                    }
-                }
 
-                .ongoing-trip {
-                    margin-top: 10px;
-
-                    .ongoing-info {
-                        display: flex;
-                        gap: 20px;
-                        align-items: center;
-                        margin-bottom: 1rem;
+                        .ongoing-trip {
+                            margin-top: 10px;
+                            width: 250px;
+                            left: 50%;
+        
+                            .ongoing-info {
+                                display: flex;
+                                gap: 20px;
+                                align-items: center;
+                                margin-bottom: 1rem;
+                            }
+                        }
                     }
                 }
             }
@@ -216,6 +210,10 @@
                     max-width: 1000px;
                     .subscribe-content {
                         padding: 3rem;
+
+                        .decor-img {
+                            display: none;
+                        }
 
                         .subscribe-form {
                             .input-wrapper {
@@ -284,17 +282,941 @@
     }
 }
 
-/* Styles for devices with max-width 900px (tablets and smaller desktops) */
-@media (max-width: $breakpoint-lg) {
+/* Styles for devices with max-width 901-1050px (tablets and smaller desktops) */
+@media (max-width: $breakpoint-md-lg) {
+    .heading-h3 {
 
+    }
+
+    .heading-h4 {
+
+    }
+
+    .overlay {
+        .container {
+
+            .header-wrapper {
+                .header {
+
+                    .navbar {
+                        .navigation {
+                            .nav-links {
+                                li {
+
+                                    a {
+                                      
+                                    }
+                                }
+                            }
+
+                            .auth-buttons {
+
+                                button {
+                                    
+                                }
+
+                                .btn-signup {
+                       
+                                }
+                            }
+
+                            .language-selector {
+                                span {
+                  
+                                }
+
+                                button {
+                                    span {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .main-section {
+
+                    .main-content {
+
+                        .main-title {
+
+                        }
+
+                        .main-description {
+                        }
+
+                        .main-btns {
+                            .get-info-btn {
+                            }
+
+                            .play-btn {
+                            }
+                        }
+                    }
+
+                    .main-image {
+                        img {
+                        }
+                    }
+                }
+            }
+
+            .services {
+                .services-content {
+
+                    .service-item {
+                    }
+                }
+            }
+
+            .destinations {
+                .destinations-content {
+
+                    .destination-card {
+                        width: 45%;
+                        .img-container {
+                        }
+
+                        .destination-card-info {
+                            h4 {
+                            }
+                        }
+                    }
+                }
+            }
+
+            .steps {
+
+                .steps-content {
+                    .steps-header {
+    
+                        h2, h4 {
+                        }
+                    }
+                }
+
+                .steps-block {
+                    flex-direction: column;
+
+                    .steps-list {
+                        padding-left: 5rem;
+                        width: 100%;
+                    }
+
+                    .steps-image-container {
+                        padding-left: 5rem;
+                        width: 50%;
+
+                        .trip-card {
+                            width: 100%;
+
+                            .trip-info {
+                                p {
+                                }
+                            }
+                        }
+
+                        .ongoing-trip {
+                            left: 70%;
+        
+                            .ongoing-info {
+        
+                            }
+                        }
+                    }
+                }
+            }
+
+            .reviews {
+                flex-direction: column;
+
+                .reviews-header {
+
+                    h4, h2 {
+                        text-align: center;
+                    }
+
+                    .pagination-dots {
+                        justify-content: center;
+                    }
+                }
+
+                .review-content {
+                    padding-left: 5rem;
+
+                    .review-card {
+                        width: 70%;
+
+                        .slider-arrows {
+                        }
+                    }
+                }
+            }
+
+            .partner-logos {
+                padding: 2rem 0;
+
+                .partner-list {
+                    padding-left: 30px;
+                }
+            }
+
+            .subscribe {
+
+                .subscribe-wrapper {
+                    max-width: 800px;
+
+                    .subscribe-content {
+
+                        .subscribe-form {
+                            .input-wrapper {
+                                span {
+                                    left: 60px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .footer {
+
+                .footer-wrapper {
+                
+                    .footer-links {
+
+                        .footer-column {
+
+                            h3 {
+                            }
+
+                            ul {
+                                li {
+                                    a {
+                                    }
+                                }
+                            }
+                        }
+
+                        .footer-social {
+                            .social-icons {
+
+                                a {
+
+                                    span {
+                                    }
+                                }
+                            }
+
+                            .app-buttons {
+                                img {
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .footer-credits {
+                }
+            }
+        }
+    }
+}
+
+/* Styles for devices with max-width 900px (tablets and smaller desktops) */
+@media (max-width: $breakpoint-md) {
+
+    .heading-h2 {
+        font-size: 2rem;
+    }
+
+    .heading-h3 {
+
+    }
+
+    .heading-h4 {
+
+    }
+
+    .overlay {
+        .container {
+            padding: 20px;
+
+            .header-wrapper {
+                .header {
+
+                    .navbar {
+                        .navigation {
+                            
+                            .nav-links {
+                                display: none; // to hamburger menu 
+
+                                li {
+
+                                    a {
+                                      
+                                    }
+                                }
+                            }
+
+                            .auth-buttons {
+                                gap: 1rem;
+                                button {
+                                    
+                                }
+
+                                .btn-signup {
+                       
+                                }
+                            }
+
+                            .language-selector {
+                                padding-left: 1rem;
+
+                                span {
+                                    font-size: 1.2rem;
+                                }
+
+                                button {
+                                    span {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .main-section {
+                    display: block;
+
+                    .main-content {
+                        max-width: 90%;
+                        text-align: center;
+
+                        .main-title {
+                            font-size: 3rem;
+                        }
+
+                        .main-description {
+                        }
+
+                        .main-btns {
+                            .get-info-btn {
+
+                            }
+
+                            .play-btn {
+                            }
+                        }
+                    }
+
+                    .main-image {
+                        display: none;
+
+                        img {
+                        }
+                    }
+                }
+            }
+
+            .services {
+                .services-content {
+                    flex-wrap: wrap;
+
+                    .service-item {
+                        width: 45%;
+                    }
+                }
+            }
+
+            .destinations {
+                .destinations-content {
+                    gap: 2rem;
+                    padding: 0;
+
+                    .destination-card {
+                        width: 47%;
+
+                        .img-container {
+                        }
+
+                        .destination-card-info {
+                            h4 {
+                            }
+                        }
+                    }
+                }
+            }
+
+            .steps {
+
+                .steps-content {
+                    .steps-header {
+                        width: 90%;
+
+                        h2, h4 {
+                        }
+                    }
+                }
+
+                .steps-block {
+
+                    .steps-list {
+                        padding-left: 3rem;
+                    }
+
+                    .steps-image-container {
+                        width: 80%;
+                        padding-left: 3rem;
+
+                        .trip-card {
+
+                            .trip-info {
+                                p {
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .ongoing-trip {
+
+                    .ongoing-info {
+
+                    }
+                }
+            }
+
+            .reviews {
+
+                .reviews-header {
+                    .pagination-dots {
+                    }
+                }
+
+                .review-content {
+                    padding-left: 2rem;
+
+                    .review-card {
+                        width: 80%;
+
+                        .slider-arrows {
+                            right: -4rem;
+                        }
+                    }
+                }
+            }
+
+            .partner-logos {
+                .partner-list {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 30px;
+                }
+            }
+
+            .subscribe {
+
+                .subscribe-wrapper {
+                    .subscribe-content {
+                        padding: 2rem;
+
+                        img {
+                            width: 60px;
+                            height: 60px;
+                            right: -5px;
+                        }
+                        h2 {
+                            font-size: 1.3rem;
+                            line-height: 2.5rem;
+                        }
+
+                        .subscribe-form {
+                            .input-wrapper {
+                                display: block;
+
+                                input {
+                                    width: 90%;
+                                    margin-bottom: 20px;
+                                }
+                                span {
+                                    top: 22%;
+                                    left: 50px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .footer {
+
+                .footer-wrapper {
+                
+                    .footer-links {
+
+                        .footer-column {
+
+                            h3 {
+                            }
+
+                            ul {
+                                li {
+                                    a {
+                                    }
+                                }
+                            }
+                        }
+
+                        .footer-social {
+                            .social-icons {
+
+                                a {
+
+                                    span {
+                                    }
+                                }
+                            }
+
+                            .app-buttons {
+                                img {
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .footer-credits {
+                }
+            }
+        }
+    }
 }
 
 /* Styles for devices with max-width 600px (small tablets and large phones) */
-@media (max-width: $breakpoint-md) {
+@media (max-width: $breakpoint-sm) {
+    .heading-h3 {
 
+    }
+
+    .heading-h4 {
+
+    }
+
+    .overlay {
+        .container {
+
+            .header-wrapper {
+                .header {
+
+                    .navbar {
+                        .navigation {
+                            .nav-links {
+                                li {
+
+                                    a {
+                                      
+                                    }
+                                }
+                            }
+
+                            .auth-buttons {
+
+                                button {
+                                    
+                                }
+
+                                .btn-signup {
+                       
+                                }
+                            }
+
+                            .language-selector {
+                                span {
+                  
+                                }
+
+                                button {
+                                    span {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .main-section {
+
+                    .main-content {
+
+                        .main-title {
+
+                        }
+
+                        .main-description {
+                        }
+
+                        .main-btns {
+                            .get-info-btn {
+                            }
+
+                            .play-btn {
+                            }
+                        }
+                    }
+
+                    .main-image {
+                        img {
+                        }
+                    }
+                }
+            }
+
+            .services {
+                .services-content {
+
+                    .service-item {
+                    }
+                }
+            }
+
+            .destinations {
+                .destinations-content {
+
+                    .destination-card {
+
+                        .img-container {
+                        }
+
+                        .destination-card-info {
+                            h4 {
+                            }
+                        }
+                    }
+                }
+            }
+
+            .steps {
+
+                .steps-content {
+                    .steps-header {
+    
+                        h2, h4 {
+                        }
+                    }
+                }
+
+                .steps-block {
+
+                    .steps-list {
+
+                    }
+
+                    .steps-image-container {
+                        .trip-card {
+
+                            .trip-info {
+                                p {
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .ongoing-trip {
+
+                    .ongoing-info {
+
+                    }
+                }
+            }
+
+            .reviews {
+
+                .reviews-header {
+                    .pagination-dots {
+                    }
+                }
+
+                .review-content {
+
+                    .review-card {
+
+                        .slider-arrows {
+                        }
+                    }
+                }
+            }
+
+            .subscribe {
+
+                .subscribe-wrapper {
+                    .subscribe-content {
+
+                        .subscribe-form {
+                            .input-wrapper {
+                                span {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .footer {
+
+                .footer-wrapper {
+                
+                    .footer-links {
+
+                        .footer-column {
+
+                            h3 {
+                            }
+
+                            ul {
+                                li {
+                                    a {
+                                    }
+                                }
+                            }
+                        }
+
+                        .footer-social {
+                            .social-icons {
+
+                                a {
+
+                                    span {
+                                    }
+                                }
+                            }
+
+                            .app-buttons {
+                                img {
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .footer-credits {
+                }
+            }
+        }
+    }
 }
 
 /* Styles for mobile devices with max-width 400px (small mobile phones) */
 @media (max-width: $breakpoint-sm) {
+    .heading-h3 {
 
+    }
+
+    .heading-h4 {
+
+    }
+
+    .overlay {
+        .container {
+
+            .header-wrapper {
+                .header {
+
+                    .navbar {
+                        .navigation {
+                            .nav-links {
+                                li {
+
+                                    a {
+                                      
+                                    }
+                                }
+                            }
+
+                            .auth-buttons {
+
+                                button {
+                                    
+                                }
+
+                                .btn-signup {
+                       
+                                }
+                            }
+
+                            .language-selector {
+                                span {
+                  
+                                }
+
+                                button {
+                                    span {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .main-section {
+
+                    .main-content {
+
+                        .main-title {
+
+                        }
+
+                        .main-description {
+                        }
+
+                        .main-btns {
+                            .get-info-btn {
+                            }
+
+                            .play-btn {
+                            }
+                        }
+                    }
+
+                    .main-image {
+                        img {
+                        }
+                    }
+                }
+            }
+
+            .services {
+                .services-content {
+
+                    .service-item {
+                    }
+                }
+            }
+
+            .destinations {
+                .destinations-content {
+
+                    .destination-card {
+
+                        .img-container {
+                        }
+
+                        .destination-card-info {
+                            h4 {
+                            }
+                        }
+                    }
+                }
+            }
+
+            .steps {
+
+                .steps-content {
+                    .steps-header {
+    
+                        h2, h4 {
+                        }
+                    }
+                }
+
+                .steps-block {
+
+                    .steps-list {
+
+                    }
+
+                    .steps-image-container {
+                        .trip-card {
+
+                            .trip-info {
+                                p {
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .ongoing-trip {
+
+                    .ongoing-info {
+
+                    }
+                }
+            }
+
+            .reviews {
+
+                .reviews-header {
+                    .pagination-dots {
+                    }
+                }
+
+                .review-content {
+
+                    .review-card {
+
+                        .slider-arrows {
+                        }
+                    }
+                }
+            }
+
+            .subscribe {
+
+                .subscribe-wrapper {
+                    .subscribe-content {
+
+                        .subscribe-form {
+                            .input-wrapper {
+                                span {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .footer {
+
+                .footer-wrapper {
+                
+                    .footer-links {
+
+                        .footer-column {
+
+                            h3 {
+                            }
+
+                            ul {
+                                li {
+                                    a {
+                                    }
+                                }
+                            }
+                        }
+
+                        .footer-social {
+                            .social-icons {
+
+                                a {
+
+                                    span {
+                                    }
+                                }
+                            }
+
+                            .app-buttons {
+                                img {
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .footer-credits {
+                }
+            }
+        }
+    }
 }
