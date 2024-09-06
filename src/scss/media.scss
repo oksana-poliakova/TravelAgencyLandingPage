@@ -546,27 +546,75 @@
                 .header {
 
                     .navbar {
+                        display: block;
+
+                        .logo {
+                            text-align: center;
+                            padding-bottom: 20px;
+
+                            img {
+                                width: 70px;
+                                height: 40px;
+                            }
+                        }
+
                         .navigation {
-                            
+                            justify-content: space-between;
+
                             .nav-links {
-                                display: none; // to hamburger menu 
+                                display: none;
+                                flex-direction: column;
+                                position: fixed;
+                                top: 0;
+                                right: -100%; 
+                                width: 250px;
+                                height: 100%;
+                                background-color: white;
+                                box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+                                padding: 2rem 1rem;
+                                z-index: 999;
+
+                                &.active {
+                                    display: flex;
+                                    right: 0;
+                                }
+
+                                .menu-header {
+                                    display: block;
+
+                                    img {
+                                        width: 70px;
+                                        height: 40px;
+                                        padding-bottom: 20px;
+                                    }
+
+                                    .close-menu {
+                                        font-size: 1.5rem;
+                                        cursor: pointer;
+                                        position: absolute;
+                                        top: 20px;
+                                        right: 20px;
+                                        z-index: 900;
+                                    }
+                                }
 
                                 li {
+                                    padding: 1rem 0;
+                                    border-bottom: 1px solid #ccc;
 
                                     a {
-                                      
                                     }
                                 }
                             }
 
                             .auth-buttons {
-                                gap: 1rem;
+                                margin-left: 0;
                                 button {
+                                    font-size: 1.2rem;
                                     
-                                }
-
-                                .btn-signup {
-                       
+                                    &:first-child {
+                                        padding-right: 3rem;
+                                    }
                                 }
                             }
 
@@ -580,6 +628,18 @@
                                 button {
                                     span {
                                     }
+                                }
+                            }
+
+                            .burger {
+                                display: flex; 
+                                cursor: pointer;
+                                position: absolute;
+                                top: 20px;
+                                right: 20px;
+
+                                span {
+                                    font-size: 1.3rem;
                                 }
                             }
                         }
@@ -750,12 +810,19 @@
             }
 
             .footer {
+                padding-bottom: 0;
 
                 .footer-wrapper {
-                
-                    .footer-links {
+                    display: block;
 
+                    .logo-footer {
+                        margin-bottom: 2.5rem;
+                    }
+
+                    .footer-links {
                         .footer-column {
+                            display: block;
+                            width: 33%;
 
                             h3 {
                             }
@@ -769,6 +836,9 @@
                         }
 
                         .footer-social {
+                            display: block;
+                            width: 100%;
+
                             .social-icons {
 
                                 a {
@@ -780,6 +850,9 @@
 
                             .app-buttons {
                                 img {
+                                    &:first-child {
+                                        margin-bottom: 1rem;
+                                    }
                                 }
                             }
                         }
@@ -787,13 +860,336 @@
                 }
 
                 .footer-credits {
+                    padding: 1rem 0;
                 }
             }
         }
     }
 }
 
-/* Styles for devices with max-width 600px (small tablets and large phones) */
+/* Styles for devices with max-width 400px (small tablets and large phones) */
+@media (max-width: $breakpoint-xs) {
+    .heading-h2 {
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+    
+    .heading-h3 {
+
+    }
+
+    .heading-h4 {
+        font-size: 1.1rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .overlay {
+        .container {
+
+            .header-wrapper {
+                .header {
+
+                    .navbar {
+                        .navigation {
+                            .auth-buttons {
+                                button {
+                                    font-size: 1rem;
+                                }
+
+                                .btn-signup {
+                       
+                                }
+                            }
+
+                            .language-selector {
+                                span {
+                                    font-size: 1rem;
+                                }
+
+                                button {
+                                    span {
+                                        font-size: 1rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .main-section {
+                    padding-top: 2rem;
+                    padding-bottom: 3.5rem;
+
+                    .main-content {
+
+                        .main-title {
+                            font-size: 2.5rem;
+                            padding-top: 30px;
+                        }
+
+                        .main-description {
+                            padding-bottom: 2rem;
+                        }
+
+                        .main-btns {
+                            display: block;
+
+                            .get-info-btn {
+                                width: 100%;
+                            }
+
+                            .play-btn {
+                                display: none;
+                            }
+
+                            .primary-text {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .main-image {
+                        img {
+                        }
+                    }
+                }
+            }
+
+            .services {
+                .services-content {
+                    padding: 2rem 0;
+
+                    .service-item {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .destinations {
+                .destinations-content {
+
+                    .destination-card {
+                        width: 100%;
+
+                        .img-container {
+                        }
+
+                        .destination-card-info {
+                            h4 {
+                            }
+                        }
+                    }
+                }
+            }
+
+            .steps {
+                padding-bottom: 0;
+
+                .steps-content {
+                    .steps-header {
+    
+                        h2, h4 {
+                        }
+                    }
+                }
+
+                .steps-block {
+                    padding-top: 2rem;
+
+                    .steps-list {
+                        padding-left: 0;
+                    }
+
+                    .steps-image-container {
+                        width: 100%;
+                        padding-left: 0;
+
+                        .trip-card {
+
+                            .trip-info {
+                                p {
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .ongoing-trip {
+                    position: static !important;
+                    text-align: center;
+                    margin: 0 auto;
+
+                    .ongoing-info {
+
+                    }
+                }
+            }
+
+            .reviews {
+
+                .reviews-header {
+                    .pagination-dots {
+                    }
+                }
+
+                .review-content {
+                    padding-left: 10px;
+
+                    .review-card {
+                        width: 100%;
+
+                        .review-profile {
+                            width: 100%;
+                        }
+
+                        .review-text {
+                            .text {
+                                padding-left: 20px;
+                                line-height: 1.75;
+                            }
+
+                            .author-review {
+                                font-size: 1rem;
+                            }
+                        }
+
+                        .slider-arrows {
+                            position: static;
+                        }
+                    }
+                }
+            }
+
+            .partner-logos {
+                padding: 1rem 0;
+
+                .partner-list {
+                    gap: 0;
+                    padding-left: 0;
+
+                    img {
+                        display: block;
+
+                        &:first-child {
+                            padding-right: 15px;
+                        }
+
+                        &:last-child {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .subscribe {
+                padding: 0;
+
+                .subscribe-wrapper {
+                    .subscribe-content {
+                        padding: 1.5rem;
+
+                        h2 {
+                            font-size: 1.1rem;
+                            line-height: 1.75;
+                            padding-bottom: 1rem;
+                        }
+
+                        .message-img {
+                            width: 45px;
+                            height: 45px;
+                            right: 0;
+                        }
+
+                        .subscribe-form {
+                            .input-wrapper {
+                                input {
+                                    width: 100%;
+                                    margin-bottom: 15px;
+                                }
+
+                                span {
+                                    left: 15px;
+                                    font-size: 20px;
+                                }
+
+                                .submit-btn {
+                                    margin-left: 0;
+                                    width: 100%;
+                                    font-size: 1.1rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .footer {
+
+                .footer-wrapper {
+                
+                    .logo-footer {
+                        margin-bottom: 2rem;
+
+                        img {
+                            width: 80px;
+                            margin-bottom: 1rem;
+                        }
+                    }
+
+                    .footer-links {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 15px;
+                        margin-bottom: 1rem;
+
+                        .footer-column {
+                        width: 45%;
+
+                            h3 {
+                                font-size: 1rem;
+                                padding-bottom: 0;
+                            }
+
+                            ul {
+                                li {
+                                    a {
+                                    }
+                                }
+                            }
+                        }
+
+                        .footer-social {
+                            .social-icons {
+                                
+                                a {
+
+                                    span {
+                                    }
+                                }
+                            }
+
+                            .app-buttons {
+                                img {
+                                }
+                            }
+
+                            h3 {
+                                font-size: 1rem;
+                                padding-top: 10px;
+                            }
+                        }
+                    }
+                }
+
+                .footer-credits {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}
+
+/* Styles for mobile devices with max-width 600px (small mobile phones) */
 @media (max-width: $breakpoint-sm) {
     .heading-h3 {
 
@@ -808,23 +1204,9 @@
 
             .header-wrapper {
                 .header {
-
                     .navbar {
                         .navigation {
-                            .nav-links {
-                                li {
-
-                                    a {
-                                      
-                                    }
-                                }
-                            }
-
                             .auth-buttons {
-
-                                button {
-                                    
-                                }
 
                                 .btn-signup {
                        
@@ -839,6 +1221,12 @@
                                 button {
                                     span {
                                     }
+                                }
+                            }
+
+                            .burger {
+                                span {
+                                    font-size: 1.1rem;
                                 }
                             }
                         }
@@ -968,223 +1356,7 @@
                 .footer-wrapper {
                 
                     .footer-links {
-
                         .footer-column {
-
-                            h3 {
-                            }
-
-                            ul {
-                                li {
-                                    a {
-                                    }
-                                }
-                            }
-                        }
-
-                        .footer-social {
-                            .social-icons {
-
-                                a {
-
-                                    span {
-                                    }
-                                }
-                            }
-
-                            .app-buttons {
-                                img {
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .footer-credits {
-                }
-            }
-        }
-    }
-}
-
-/* Styles for mobile devices with max-width 400px (small mobile phones) */
-@media (max-width: $breakpoint-sm) {
-    .heading-h3 {
-
-    }
-
-    .heading-h4 {
-
-    }
-
-    .overlay {
-        .container {
-
-            .header-wrapper {
-                .header {
-
-                    .navbar {
-                        .navigation {
-                            .nav-links {
-                                li {
-
-                                    a {
-                                      
-                                    }
-                                }
-                            }
-
-                            .auth-buttons {
-
-                                button {
-                                    
-                                }
-
-                                .btn-signup {
-                       
-                                }
-                            }
-
-                            .language-selector {
-                                span {
-                  
-                                }
-
-                                button {
-                                    span {
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .main-section {
-
-                    .main-content {
-
-                        .main-title {
-
-                        }
-
-                        .main-description {
-                        }
-
-                        .main-btns {
-                            .get-info-btn {
-                            }
-
-                            .play-btn {
-                            }
-                        }
-                    }
-
-                    .main-image {
-                        img {
-                        }
-                    }
-                }
-            }
-
-            .services {
-                .services-content {
-
-                    .service-item {
-                    }
-                }
-            }
-
-            .destinations {
-                .destinations-content {
-
-                    .destination-card {
-
-                        .img-container {
-                        }
-
-                        .destination-card-info {
-                            h4 {
-                            }
-                        }
-                    }
-                }
-            }
-
-            .steps {
-
-                .steps-content {
-                    .steps-header {
-    
-                        h2, h4 {
-                        }
-                    }
-                }
-
-                .steps-block {
-
-                    .steps-list {
-
-                    }
-
-                    .steps-image-container {
-                        .trip-card {
-
-                            .trip-info {
-                                p {
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .ongoing-trip {
-
-                    .ongoing-info {
-
-                    }
-                }
-            }
-
-            .reviews {
-
-                .reviews-header {
-                    .pagination-dots {
-                    }
-                }
-
-                .review-content {
-
-                    .review-card {
-
-                        .slider-arrows {
-                        }
-                    }
-                }
-            }
-
-            .subscribe {
-
-                .subscribe-wrapper {
-                    .subscribe-content {
-
-                        .subscribe-form {
-                            .input-wrapper {
-                                span {
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            .footer {
-
-                .footer-wrapper {
-                
-                    .footer-links {
-
-                        .footer-column {
-
                             h3 {
                             }
 
