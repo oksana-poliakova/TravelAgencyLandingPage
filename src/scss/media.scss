@@ -1,6 +1,6 @@
 @import 'variables';
 
-/* Styles for devices with min-width 1050 max-width 1200px (large desktops and below) */
+/* Styles for devices with min-width 1051px max-width 1200px */
 @media (max-width: $breakpoint-lg) {
 
     .heading-h3 {
@@ -28,7 +28,7 @@
 
                                     a {
                                         padding-bottom: 3px;
-                                        font-size: 1rem;
+                                        font-size: 1.2rem;
                                     }
                                 }
                             }
@@ -38,7 +38,6 @@
 
                                 button {
                                     padding-right: 1.5rem;
-                                    
                                 }
 
                                 .btn-signup {
@@ -79,9 +78,6 @@
                         }
 
                         .main-btns {
-                            .get-info-btn {
-                            }
-
                             .play-btn {
                                 margin-left: 50px;
                             }
@@ -146,7 +142,6 @@
                     flex-wrap: wrap;
                     justify-content: space-around;
 
-
                     .steps-list {
                         width: 40%;
                         margin-bottom: 2rem;
@@ -196,9 +191,6 @@
 
                     .review-card {
                         width: 80%;
-
-                        .slider-arrows {
-                        }
                     }
                 }
             }
@@ -230,7 +222,6 @@
                 padding: 3rem 0;
 
                 .footer-wrapper {
-                
                     .footer-links {
                         gap: 3rem;
                         margin-bottom: 2rem;
@@ -282,119 +273,21 @@
     }
 }
 
-/* Styles for devices with max-width 901-1050px (tablets and smaller desktops) */
+/* Styles for devices with min-width 901px and max-width 1050px */
 @media (max-width: $breakpoint-md-lg) {
-    .heading-h3 {
-
-    }
-
-    .heading-h4 {
-
-    }
-
     .overlay {
         .container {
-
-            .header-wrapper {
-                .header {
-
-                    .navbar {
-                        .navigation {
-                            .nav-links {
-                                li {
-
-                                    a {
-                                      
-                                    }
-                                }
-                            }
-
-                            .auth-buttons {
-
-                                button {
-                                    
-                                }
-
-                                .btn-signup {
-                       
-                                }
-                            }
-
-                            .language-selector {
-                                span {
-                  
-                                }
-
-                                button {
-                                    span {
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .main-section {
-
-                    .main-content {
-
-                        .main-title {
-
-                        }
-
-                        .main-description {
-                        }
-
-                        .main-btns {
-                            .get-info-btn {
-                            }
-
-                            .play-btn {
-                            }
-                        }
-                    }
-
-                    .main-image {
-                        img {
-                        }
-                    }
-                }
-            }
-
-            .services {
-                .services-content {
-
-                    .service-item {
-                    }
-                }
-            }
+            padding: 0 20px;
 
             .destinations {
                 .destinations-content {
-
                     .destination-card {
                         width: 45%;
-                        .img-container {
-                        }
-
-                        .destination-card-info {
-                            h4 {
-                            }
-                        }
                     }
                 }
             }
 
             .steps {
-
-                .steps-content {
-                    .steps-header {
-    
-                        h2, h4 {
-                        }
-                    }
-                }
-
                 .steps-block {
                     flex-direction: column;
 
@@ -409,19 +302,10 @@
 
                         .trip-card {
                             width: 100%;
-
-                            .trip-info {
-                                p {
-                                }
-                            }
                         }
 
                         .ongoing-trip {
                             left: 70%;
-        
-                            .ongoing-info {
-        
-                            }
                         }
                     }
                 }
@@ -431,7 +315,6 @@
                 flex-direction: column;
 
                 .reviews-header {
-
                     h4, h2 {
                         text-align: center;
                     }
@@ -446,9 +329,6 @@
 
                     .review-card {
                         width: 70%;
-
-                        .slider-arrows {
-                        }
                     }
                 }
             }
@@ -462,12 +342,10 @@
             }
 
             .subscribe {
-
                 .subscribe-wrapper {
                     max-width: 800px;
 
                     .subscribe-content {
-
                         .subscribe-form {
                             .input-wrapper {
                                 span {
@@ -478,64 +356,15 @@
                     }
                 }
             }
-
-            .footer {
-
-                .footer-wrapper {
-                
-                    .footer-links {
-
-                        .footer-column {
-
-                            h3 {
-                            }
-
-                            ul {
-                                li {
-                                    a {
-                                    }
-                                }
-                            }
-                        }
-
-                        .footer-social {
-                            .social-icons {
-
-                                a {
-
-                                    span {
-                                    }
-                                }
-                            }
-
-                            .app-buttons {
-                                img {
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .footer-credits {
-                }
-            }
         }
     }
 }
 
-/* Styles for devices with max-width 900px (tablets and smaller desktops) */
+/* Styles for devices with min-width 601px and max-width 900px */
 @media (max-width: $breakpoint-md) {
 
     .heading-h2 {
         font-size: 2rem;
-    }
-
-    .heading-h3 {
-
-    }
-
-    .heading-h4 {
-
     }
 
     .overlay {
@@ -544,7 +373,6 @@
 
             .header-wrapper {
                 .header {
-
                     .navbar {
                         display: block;
 
@@ -601,14 +429,12 @@
                                 li {
                                     padding: 1rem 0;
                                     border-bottom: 1px solid #ccc;
-
-                                    a {
-                                    }
                                 }
                             }
 
                             .auth-buttons {
                                 margin-left: 0;
+
                                 button {
                                     font-size: 1.2rem;
                                     
@@ -623,11 +449,6 @@
 
                                 span {
                                     font-size: 1.2rem;
-                                }
-
-                                button {
-                                    span {
-                                    }
                                 }
                             }
 
@@ -656,25 +477,10 @@
                         .main-title {
                             font-size: 3rem;
                         }
-
-                        .main-description {
-                        }
-
-                        .main-btns {
-                            .get-info-btn {
-
-                            }
-
-                            .play-btn {
-                            }
-                        }
                     }
 
                     .main-image {
                         display: none;
-
-                        img {
-                        }
                     }
                 }
             }
@@ -682,6 +488,7 @@
             .services {
                 .services-content {
                     flex-wrap: wrap;
+                    padding-top: 2rem;
 
                     .service-item {
                         width: 45%;
@@ -696,64 +503,30 @@
 
                     .destination-card {
                         width: 47%;
-
-                        .img-container {
-                        }
-
-                        .destination-card-info {
-                            h4 {
-                            }
-                        }
                     }
                 }
             }
 
             .steps {
-
                 .steps-content {
                     .steps-header {
                         width: 90%;
-
-                        h2, h4 {
-                        }
                     }
                 }
 
                 .steps-block {
-
                     .steps-list {
-                        padding-left: 3rem;
+                        padding-left: 0;
                     }
 
                     .steps-image-container {
                         width: 80%;
                         padding-left: 3rem;
-
-                        .trip-card {
-
-                            .trip-info {
-                                p {
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .ongoing-trip {
-
-                    .ongoing-info {
-
                     }
                 }
             }
 
             .reviews {
-
-                .reviews-header {
-                    .pagination-dots {
-                    }
-                }
-
                 .review-content {
                     padding-left: 2rem;
 
@@ -770,13 +543,18 @@
             .partner-logos {
                 .partner-list {
                     flex-wrap: wrap;
-                    justify-content: center;
-                    gap: 30px;
+                    justify-content: space-around;
+                    gap: 10px;
+                    
+                    img {
+                        &:last-child {
+                            display: none;
+                        }
+                    }
                 }
             }
 
             .subscribe {
-
                 .subscribe-wrapper {
                     .subscribe-content {
                         padding: 2rem;
@@ -786,6 +564,7 @@
                             height: 60px;
                             right: -5px;
                         }
+
                         h2 {
                             font-size: 1.3rem;
                             line-height: 2.5rem;
@@ -823,30 +602,11 @@
                         .footer-column {
                             display: block;
                             width: 33%;
-
-                            h3 {
-                            }
-
-                            ul {
-                                li {
-                                    a {
-                                    }
-                                }
-                            }
                         }
 
                         .footer-social {
                             display: block;
                             width: 100%;
-
-                            .social-icons {
-
-                                a {
-
-                                    span {
-                                    }
-                                }
-                            }
 
                             .app-buttons {
                                 img {
@@ -867,15 +627,11 @@
     }
 }
 
-/* Styles for devices with max-width 400px (small tablets and large phones) */
+/* Styles for devices with max-width 450px (small phones) */
 @media (max-width: $breakpoint-xs) {
     .heading-h2 {
         font-size: 1.5rem;
         line-height: 1.5;
-    }
-    
-    .heading-h3 {
-
     }
 
     .heading-h4 {
@@ -885,19 +641,13 @@
 
     .overlay {
         .container {
-
             .header-wrapper {
                 .header {
-
                     .navbar {
                         .navigation {
                             .auth-buttons {
                                 button {
                                     font-size: 1rem;
-                                }
-
-                                .btn-signup {
-                       
                                 }
                             }
 
@@ -921,6 +671,7 @@
                     padding-bottom: 3.5rem;
 
                     .main-content {
+                        max-width: 100%;
 
                         .main-title {
                             font-size: 2.5rem;
@@ -947,11 +698,6 @@
                             }
                         }
                     }
-
-                    .main-image {
-                        img {
-                        }
-                    }
                 }
             }
 
@@ -967,31 +713,14 @@
 
             .destinations {
                 .destinations-content {
-
                     .destination-card {
                         width: 100%;
-
-                        .img-container {
-                        }
-
-                        .destination-card-info {
-                            h4 {
-                            }
-                        }
                     }
                 }
             }
 
             .steps {
                 padding-bottom: 0;
-
-                .steps-content {
-                    .steps-header {
-    
-                        h2, h4 {
-                        }
-                    }
-                }
 
                 .steps-block {
                     padding-top: 2rem;
@@ -1003,14 +732,6 @@
                     .steps-image-container {
                         width: 100%;
                         padding-left: 0;
-
-                        .trip-card {
-
-                            .trip-info {
-                                p {
-                                }
-                            }
-                        }
                     }
                 }
 
@@ -1018,20 +739,11 @@
                     position: static !important;
                     text-align: center;
                     margin: 0 auto;
-
-                    .ongoing-info {
-
-                    }
+                    width: 100% !important;
                 }
             }
 
             .reviews {
-
-                .reviews-header {
-                    .pagination-dots {
-                    }
-                }
-
                 .review-content {
                     padding-left: 10px;
 
@@ -1124,9 +836,7 @@
             }
 
             .footer {
-
                 .footer-wrapper {
-                
                     .logo-footer {
                         margin-bottom: 2rem;
 
@@ -1149,244 +859,12 @@
                                 font-size: 1rem;
                                 padding-bottom: 0;
                             }
-
-                            ul {
-                                li {
-                                    a {
-                                    }
-                                }
-                            }
-                        }
-
-                        .footer-social {
-                            .social-icons {
-                                
-                                a {
-
-                                    span {
-                                    }
-                                }
-                            }
-
-                            .app-buttons {
-                                img {
-                                }
-                            }
-
-                            h3 {
-                                font-size: 1rem;
-                                padding-top: 10px;
-                            }
                         }
                     }
                 }
 
                 .footer-credits {
                     font-size: 0.9rem;
-                }
-            }
-        }
-    }
-}
-
-/* Styles for mobile devices with max-width 600px (small mobile phones) */
-@media (max-width: $breakpoint-sm) {
-    .heading-h3 {
-
-    }
-
-    .heading-h4 {
-
-    }
-
-    .overlay {
-        .container {
-
-            .header-wrapper {
-                .header {
-                    .navbar {
-                        .navigation {
-                            .auth-buttons {
-
-                                .btn-signup {
-                       
-                                }
-                            }
-
-                            .language-selector {
-                                span {
-                  
-                                }
-
-                                button {
-                                    span {
-                                    }
-                                }
-                            }
-
-                            .burger {
-                                span {
-                                    font-size: 1.1rem;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .main-section {
-
-                    .main-content {
-
-                        .main-title {
-
-                        }
-
-                        .main-description {
-                        }
-
-                        .main-btns {
-                            .get-info-btn {
-                            }
-
-                            .play-btn {
-                            }
-                        }
-                    }
-
-                    .main-image {
-                        img {
-                        }
-                    }
-                }
-            }
-
-            .services {
-                .services-content {
-
-                    .service-item {
-                    }
-                }
-            }
-
-            .destinations {
-                .destinations-content {
-
-                    .destination-card {
-
-                        .img-container {
-                        }
-
-                        .destination-card-info {
-                            h4 {
-                            }
-                        }
-                    }
-                }
-            }
-
-            .steps {
-
-                .steps-content {
-                    .steps-header {
-    
-                        h2, h4 {
-                        }
-                    }
-                }
-
-                .steps-block {
-
-                    .steps-list {
-
-                    }
-
-                    .steps-image-container {
-                        .trip-card {
-
-                            .trip-info {
-                                p {
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .ongoing-trip {
-
-                    .ongoing-info {
-
-                    }
-                }
-            }
-
-            .reviews {
-
-                .reviews-header {
-                    .pagination-dots {
-                    }
-                }
-
-                .review-content {
-
-                    .review-card {
-
-                        .slider-arrows {
-                        }
-                    }
-                }
-            }
-
-            .subscribe {
-
-                .subscribe-wrapper {
-                    .subscribe-content {
-
-                        .subscribe-form {
-                            .input-wrapper {
-                                span {
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            .footer {
-
-                .footer-wrapper {
-                
-                    .footer-links {
-                        .footer-column {
-                            h3 {
-                            }
-
-                            ul {
-                                li {
-                                    a {
-                                    }
-                                }
-                            }
-                        }
-
-                        .footer-social {
-                            .social-icons {
-
-                                a {
-
-                                    span {
-                                    }
-                                }
-                            }
-
-                            .app-buttons {
-                                img {
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .footer-credits {
                 }
             }
         }
