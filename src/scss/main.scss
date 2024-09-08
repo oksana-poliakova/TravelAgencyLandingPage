@@ -243,46 +243,49 @@
                 justify-content: center;
                 padding: 1.2rem;
 
-                .destination-card {
-                    border-radius: 10px;
-                    overflow: hidden;
-                    text-align: center;
-                    padding: 1.2rem;
-                    width: calc(33.333% - 4rem); /* Три карточки в ряд с отступами */
-                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                    transition: transform 0.3s, box-shadow 0.3s;
-                    cursor: pointer;
+                .destination-card-overlay {
+                    width: calc(33.333% - 4rem); 
 
-                    .img-container {
-                        width: 100%;
-                        height: 18rem; 
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                        background-position: center;
-                        margin-bottom: 1rem;
-                    }
-
-                    .destination-card-info {
-                        display: flex;
-                        justify-content: space-between;
-                        padding: 0 10px;
-                        align-items: center;
-                    }
-
-                    &:hover {
-                        transform: translateY(-10px);
-                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 
-                                    0 6px 20px rgba(0, 0, 0, 0.1);
-                    }
-
-                    .duration {
-                        display: flex;
-                        align-items: center;
-                        gap: 10px;
-
-                        span:first-child {
-                            font-size: 1rem;
-                            padding-left: 5px;
+                    .destination-card {
+                        border-radius: 10px;
+                        overflow: hidden;
+                        text-align: center;
+                        padding: 1.2rem;
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                        transition: transform 0.3s, box-shadow 0.3s;
+                        cursor: pointer;
+    
+                        .img-container {
+                            width: 100%;
+                            height: 18rem; 
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            margin-bottom: 1rem;
+                        }
+    
+                        .destination-card-info {
+                            display: flex;
+                            justify-content: space-between;
+                            padding: 0 10px;
+                            align-items: center;
+                        }
+    
+                        &:hover {
+                            transform: translateY(-10px);
+                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 
+                                        0 6px 20px rgba(0, 0, 0, 0.1);
+                        }
+    
+                        .duration {
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+    
+                            span:first-child {
+                                font-size: 1rem;
+                                padding-left: 5px;
+                            }
                         }
                     }
                 }
