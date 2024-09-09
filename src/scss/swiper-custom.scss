@@ -1,0 +1,14 @@
+.swiper-button-prev, .swiper-button-next {
+   color: #121c67;
+}
+
+.swiper-pagination-bullet-active {
+    background: #121c67;
+}
+
+@media (max-width: 450px) {
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none;
+    }
+}

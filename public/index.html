@@ -8,10 +8,12 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/swiper-custom.css">
     <link rel="stylesheet" href="css/media.css">
     
 </head>
@@ -79,28 +81,28 @@
                 <h2 class="heading-h2">We Offer Best Services</h2>
             </div>
             <div class="services-content">
-                <div class="service-item-overlay" data-aos="fade-up">
+                <div class="service-item-overlay" data-aos="fade-up" data-aos-duration="800">
                    <div class="service-item">
                         <img src="assets/images/weather.svg" alt="">
                         <h3 class="heading-h3">Calculated Weather</h3>
                         <p class="main-text">Built Wicket longer admire do barton vanity itself do in it.</p>
                    </div>
                 </div>
-                <div class="service-item-overlay" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                <div class="service-item-overlay" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
                     <div class="service-item">
                         <img src="assets/images/settings.svg" alt="">
                         <h3 class="heading-h3">Best Flights</h3>
                         <p class="main-text">Engrossed listening. Park gate sell they west hard for the.</p>
                     </div>
                 </div>
-                <div class="service-item-overlay" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                <div class="service-item-overlay" data-aos="fade-up" data-aos-delay="600" data-aos-duration="800">
                     <div class="service-item">
                         <img src="assets/images/sound.svg" alt="">
                         <h3 class="heading-h3">Local Events</h3>
                         <p class="main-text">Barton vanity itself do in it. Prefer to men it engrossed listening.</p>
                     </div>  
                 </div>
-                <div class="service-item-overlay" data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000">
+                <div class="service-item-overlay" data-aos="fade-up" data-aos-delay="900" data-aos-duration="800">
                     <div class="service-item">
                         <img src="assets/images/settings.svg" alt="">
                         <h3 class="heading-h3">Customization</h3>
@@ -117,7 +119,7 @@
                 <h2 class="heading-h2">Top Destinations</h2>
             </div>
             <div class="destinations-content">
-                <div class="destination-card-overlay" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000">
+                <div class="destination-card-overlay" data-aos="fade-down" data-aos-delay="300" data-aos-duration="800">
                     <div class="destination-card">
                         <div class="img-container" style="background-image: url('assets/images/rom.png');"></div>
                         <div class="destination-card-info">
@@ -127,7 +129,7 @@
                         <p class="duration"><span class="fa-solid fa-location-arrow"></span><span>5 Days Trip</span></p>
                     </div>
                 </div>
-                <div class="destination-card-overlay" data-aos="fade-down" data-aos-delay="600" data-aos-duration="1000">
+                <div class="destination-card-overlay" data-aos="fade-down" data-aos-delay="600" data-aos-duration="800">
                     <div class="destination-card">
                         <div class="img-container" style="background-image: url('assets/images/london.png');"></div>
                         <div class="destination-card-info">
@@ -137,7 +139,7 @@
                         <p class="duration"><span class="fa-solid fa-location-arrow"></span><span>12 Days Trip</span></p>
                     </div>
                 </div>
-                <div class="destination-card-overlay" data-aos="fade-down" data-aos-delay="900" data-aos-duration="1000">
+                <div class="destination-card-overlay" data-aos="fade-down" data-aos-delay="900" data-aos-duration="800">
                     <div class="destination-card">
                         <div class="img-container" style="background-image: url('assets/images/europe.png');"></div>
                         <div class="destination-card-info">
@@ -187,7 +189,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="steps-image-container" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="steps-image-container" data-aos="fade-up" data-aos-duration="800">
                         <div class="trip-card">
                             <div class="trip-image" style="background-image: url(../public/assets/images/greece.png);"></div>
                             <div class="trip-info">
@@ -230,39 +232,46 @@
             <div class="reviews-header">
                 <h4 class="heading-h4">Reviews</h4>
                 <h2 class="heading-h2">What People Say About Us.</h2>
-                <div class="pagination-dots">
-                    <span class="dot active"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                </div>
             </div>
-            <div class="review-content">
-                <div class="review-card">
-                    <div class="slider-arrows">
-                        <span class="fa-solid fa-chevron-up"></span>
-                        <span class="fa-solid fa-chevron-down active"></span>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="review-profile">
+                            <img src="assets/images/person.png" alt="">
+                        </div>
+                        <div class="review-text">
+                            <p class="text">“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as
+                                knew next. Of believed or diverted no.”</p>
+                            <p class="author-review">Mike Taylor</p>
+                            <p class="city-review">London, England</p>
+                        </div>
                     </div>
-                    <div class="review-profile">
-                        <img src="assets/images/person.png" alt="">
+                    <div class="swiper-slide">
+                        <div class="review-profile">
+                            <img src="assets/images/person.png" alt="">
+                        </div>
+                        <div class="review-text">
+                            <p class="text">“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as
+                                knew next. Of believed or diverted no.”</p>
+                            <p class="author-review">Chris Thomas</p>
+                            <p class="city-review">Manchester, England</p>
+                        </div>
                     </div>
-                    <div class="review-text">
-                        <p class="text">“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as
-                            knew next. Of believed or diverted no.”</p>
-                        <p class="author-review">Mike Taylor</p>
-                        <p class="city-review">London, England</p>
+                    <div class="swiper-slide">
+                        <div class="review-profile">
+                            <img src="assets/images/person.png" alt="">
+                        </div>
+                        <div class="review-text">
+                            <p class="text">“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as
+                                knew next. Of believed or diverted no.”</p>
+                            <p class="author-review">Chris Thomas</p>
+                            <p class="city-review">Manchester, England</p>
+                        </div>
                     </div>
                 </div>
-                <div class="review-card">
-                    <div class="review-profile">
-                        <img src="assets/images/person.png" alt="">
-                    </div>
-                    <div class="review-text">
-                        <p class="text">“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as
-                            knew next. Of believed or diverted no.”</p>
-                        <p class="author-review">Chris Thomas</p>
-                        <p class="city-review">Manchester, England</p>
-                    </div>
-                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </section>
     
@@ -347,8 +356,9 @@
          </footer>
        </div>
    </div>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/bundle.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 </html>

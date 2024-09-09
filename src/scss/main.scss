@@ -7,6 +7,10 @@
 @import 'mixins';
 @import 'media.scss';
 
+// Import custom styles 
+@import 'swiper-custom.scss';
+
+
 .overlay {
     position: relative;
 
@@ -488,116 +492,68 @@
         .reviews {
             display: flex;
             justify-content: space-around;
-            gap: 5rem;
+            gap: 4rem;
 
             .reviews-header {
                 h2 {
                     text-align: left;
-
                 }
-
-                .pagination-dots {
-                    display: flex;
-                    justify-content: left;
-                    margin-top: 5rem;
-                    
-                    .dot {
-                        height: 12px;
-                        width: 12px;
-                        background-color: rgb(188, 188, 188);
-                        border-radius: 50%;
-                        display: inline-block;
-                        margin: 0 5px;
-                        
-                        &.active {
-                            background-color: $dark-grey;
-                        }
-                    }
-                }
-
             }
 
-            .review-content {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
+            .swiper {
+                width: 60%;
+                padding: 50px;
 
-                .review-card {
-                    background-color: #ffffff;
-                    padding: 2rem;
-                    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-                    border-radius: 8px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    position: relative;
-                    width: 65%;
-
-                    .slider-arrows {
-                        position: absolute;
-                        top: 20%;
-                        right: -6rem;
-                        z-index: 50;
+                .swiper-wrapper {
+                    .swiper-slide {
+                        background-color: #ffffff;
+                        padding: 2rem;
+                        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+                        border-radius: 8px;
                         display: flex;
-                        flex-direction: column;
-
-                        span {
-                            color: rgb(188, 188, 188);
-                            font-size: 1.5rem;
-
-                            &:first-child {
-                                margin-bottom: 100px;
+                        align-items: center;
+                        justify-content: center;
+                        position: relative;
+                        width: 65%;
+                        min-height: 300px;
+    
+                        .review-profile {
+                            img {
+                                width: 68px;
+                                height: 68px;
+                                border-radius: 50%;
+                                position: absolute;
+                                top: -20px;
+                                left: -20px;
+                                z-index: 40;
                             }
-
-                            &:last-child {
-                            }
-
-                            &.active {
-                                color: $dark-grey;
-                            }
-                        }
-                    }
-
-                    .review-profile {
-                        img {
-                            width: 68px;
-                            height: 68px;
-                            border-radius: 50%;
-                            position: absolute;
-                            top: -20px;
-                            left: -20px;
-                            z-index: 40;
-                        }
-                        
-                    }
-
-                    .review-text {
-                        .text {
-                            padding-left: 2rem;
-                            line-height: 2rem;
-                            color: $dark-grey;
-                            font-weight: 700;
-                        }
-
-                        h3 {
                             
                         }
-
-                        .author-review {
-                            font-size: 1.15rem;
-                            color: $dark-grey;
-                            font-weight: 700;
-                            padding: 2rem 0 1rem 0;
+    
+                        .review-text {
+                            .text {
+                                padding-left: 2rem;
+                                line-height: 2rem;
+                                color: $dark-grey;
+                                font-weight: 700;
+                            }
+    
+                            h3 {
+                                
+                            }
+    
+                            .author-review {
+                                font-size: 1.15rem;
+                                color: $dark-grey;
+                                font-weight: 700;
+                                padding: 2rem 0 1rem 0;
+                            }
+    
+                            .city-review {
+                                color: $dark-grey;
+                                font-weight: 500;
+                            }
                         }
-
-                        .city-review {
-                            color: $dark-grey;
-                            font-weight: 500;
-                        }
-                    }
-
-                    &:last-child {
-                        display: none;
                     }
                 }
             }

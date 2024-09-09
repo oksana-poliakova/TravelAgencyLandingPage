@@ -535,14 +535,14 @@
             }
 
             .reviews {
-                .review-content {
-                    padding-left: 2rem;
+                .swiper {
+                    width: 90%;
 
-                    .review-card {
-                        width: 80%;
+                    .swiper-wrapper {
+                        margin-bottom: 20px;
 
-                        .slider-arrows {
-                            right: -4rem;
+                        .swiper-slide {
+                            width: 100%;
                         }
                     }
                 }
@@ -757,29 +757,28 @@
             }
 
             .reviews {
-                .review-content {
-                    padding-left: 10px;
+                .swiper {
+                    width: 100%;
+                    padding: 20px;
 
-                    .review-card {
-                        width: 100%;
-
-                        .review-profile {
-                            width: 100%;
-                        }
-
-                        .review-text {
-                            .text {
-                                padding-left: 20px;
-                                line-height: 1.75;
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            .review-card {
+                                .review-text {
+                                    .text {
+                                        padding-left: 20px;
+                                        line-height: 1.75;
+                                    }
+        
+                                    .author-review {
+                                        font-size: 1rem;
+                                    }
+                                }
+        
+                                .slider-arrows {
+                                    position: static;
+                                }
                             }
-
-                            .author-review {
-                                font-size: 1rem;
-                            }
-                        }
-
-                        .slider-arrows {
-                            position: static;
                         }
                     }
                 }
