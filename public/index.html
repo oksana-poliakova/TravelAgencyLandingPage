@@ -21,8 +21,17 @@
     <div class="overlay">
         <img src="assets/images/header-decore.svg" alt="" class="main-bg-image">
         <div class="container">
-            <div class="call-btn">
+            <!-- Call button -->
+            <button class="call-btn" data-modal="#m1">
                 <span class="fa-solid fa-phone"></span>
+            </button>
+            <!-- Modal window -->
+            <div class="modal-container" id="m1">
+                <div class="modal-overlay" data-modal="close"></div>
+                <div class="modal">
+                    <p>1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore molestiae ab ipsa inventore, dolor necessitatibus iusto delectus in ipsam voluptatibus nemo, quam, accusamus animi saepe nulla nobis tempora consequuntur rerum!</p>
+                    <button class="close" data-modal="close">Close window</button>
+                </div>
             </div>
             <!-- Header -->
             <div class="header-wrapper">
