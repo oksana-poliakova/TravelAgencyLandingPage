@@ -3,6 +3,9 @@ const sass = require('gulp-sass')(require('sass'));
 const cleanCSS = require('gulp-clean-css');
 const uglify = require('gulp-uglify'); 
 const concat = require('gulp-concat');
+// Including HTML files
+const fileInclude = require('gulp-file-include');
+
 
 const paths = {
     scss: 'src/scss/**/*.scss',
@@ -25,9 +28,19 @@ gulp.task('uglify', function() {
         .pipe(gulp.dest(paths.jsDest)); 
 });
 
+gulp.task('html', function() {
+    return gulp.src(['src/*.html']) // Берем HTML-файлы из src
+      .pipe(fileInclude({
+        prefix: '@@', // Префикс для инклюдов
+        basepath: '@file' // Путь относительно текущего файла
+      }))
+      .pipe(gulp.dest('public')); // Сохраняем в папку public
+});
+
 gulp.task('watch', function() {
+    gulp.watch('src/**/*.html', gulp.series('html'));
     gulp.watch(paths.scss, gulp.series('sass'));
     gulp.watch(paths.js, gulp.series('uglify')); 
 });
 
-gulp.task('default', gulp.series('sass', 'uglify', 'watch')); 
+gulp.task('default', gulp.series('sass', 'uglify', 'html', 'watch')); 
