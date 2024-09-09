@@ -10,6 +10,9 @@
 // Import custom styles 
 @import 'swiper-custom.scss';
 
+// Import components
+@import 'modal-container.scss';
+
 
 .overlay {
     position: relative;
@@ -639,10 +642,6 @@
                                 line-height: 2rem;
                                 color: $dark-grey;
                                 font-weight: 700;
-                            }
-    
-                            h3 {
-                                
                             }
     
                             .author-review {

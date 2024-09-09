@@ -1,0 +1,115 @@
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .modal-overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .modal {
+        position: relative;
+        z-index: 2;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        max-width: 400px;
+        margin: 50px auto;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: #ff6b00;
+            cursor: pointer;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: #e65900;
+            }
+        }
+
+        .modal-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #121c67;
+            text-align: center;
+        }
+
+        .callback-form {
+            display: flex;
+            flex-direction: column;
+
+            .form-group {
+                margin-bottom: 15px;
+
+                label {
+                    display: block;
+                    font-weight: 600;
+                    margin-bottom: 5px;
+                    color: #121c67;
+                }
+
+                input[type="text"],
+                input[type="tel"] {
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    font-size: 1rem;
+                }
+
+                &.form-checkbox {
+                    display: flex;
+                    align-items: center;
+
+                    input[type="checkbox"] {
+                        margin-right: 10px;
+                    }
+
+                    label {
+                        font-weight: 400;
+                    }
+                }
+            }
+
+            .btn-submit {
+                background-color: $intense-orange;
+                color: #fff;
+                padding: 10px 15px;
+                border: none;
+                border-radius: 5px;
+                font-size: 1rem;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                width: 100%;
+                margin-top: 10px;
+
+                &:hover {
+                    background-color: $intense-orange;
+                }
+            }
+        }
+    }
+}

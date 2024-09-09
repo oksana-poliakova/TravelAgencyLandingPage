@@ -1,1 +1,0 @@
-document.addEventListener("DOMContentLoaded",function(){document.addEventListener("click",function(t){var t=t.target,e=t.closest(".call-btn");e?document.querySelector(e.dataset.modal).classList.add("active"):(t.classList.contains("modal-overlay")||t.classList.contains("close"))&&t.closest(".modal-container").classList.remove("active")})});

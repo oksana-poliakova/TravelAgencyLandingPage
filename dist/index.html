@@ -25,32 +25,7 @@
             <button class="call-btn" data-modal="#m1">
                 <span class="fa-solid fa-phone"></span>
             </button>
-            <!-- Modal window -->
-<div class="modal-container" id="m1">
-    <div class="modal-overlay" data-modal="close"></div>
-    <div class="modal">
-        <button class="close" data-modal="close">
-            <span class="fa-solid fa-xmark"></span>
-        </button>
-        <h2 class="modal-title">We will call you back within 10 minutes</h2>
-        <form class="callback-form">
-            <div class="form-group">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
-            </div>
-            <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
-            </div>
-            <div class="form-group form-checkbox">
-                <input type="checkbox" id="agreement" name="agreement" required>
-                <label for="agreement">I agree to the data processing terms</label>
-            </div>
-            <button type="submit" class="btn-submit">Submit</button>
-        </form>
-    </div>
-</div>
-
+            @@inc
             <!-- Header -->
             <div class="header-wrapper">
                 <header class="header">
