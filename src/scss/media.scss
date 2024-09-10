@@ -506,9 +506,7 @@
                     padding-top: 2rem;
                     
                     .service-item-overlay {
-                        .service-item {
-                            width: 45%;
-                        }
+                        width: 45%;
                     }
                 }
             }
@@ -521,6 +519,14 @@
                     .destination-card-overlay {
                         width: 47%;
                     }
+                }
+            }
+
+            .faq-section {
+                display: block;
+                
+                .faq-header {
+                    width: 100%;
                 }
             }
 
@@ -726,9 +732,7 @@
                     padding: 2rem 0;
 
                     .service-item-overlay {
-                        .service-item {
-                            width: 100%;
-                        }
+                        width: 100%;
                     }
                 }
             }
@@ -737,6 +741,15 @@
                 .destinations-content {
                     .destination-card-overlay {
                         width: 100%;
+                    }
+                }
+            }
+
+            .faq-section {
+                padding: 1.5rem 0 0 0;
+                .faq-header {
+                    h4, h2 {
+                        text-align: center;
                     }
                 }
             }
