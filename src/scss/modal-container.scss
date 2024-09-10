@@ -1,3 +1,5 @@
+@import 'variables'; 
+
 .modal-container {
     position: fixed;
     top: 0;
@@ -27,8 +29,8 @@
         position: relative;
         z-index: 2;
         background-color: #fff;
-        padding: 30px;
-        border-radius: 8px;
+        padding: 50px;
+        border-radius: 10px;
         max-width: 400px;
         margin: 50px auto;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -39,7 +41,7 @@
             right: 10px;
             background: none;
             border: none;
-            font-size: 24px;
+            font-size: 2rem;
             color: #ff6b00;
             cursor: pointer;
             transition: color 0.3s ease;
@@ -52,7 +54,7 @@
         .modal-title {
             font-size: 1.5rem;
             font-weight: 700;
-            margin-bottom: 20px;
+            margin: 30px 0;
             color: #121c67;
             text-align: center;
         }
@@ -97,7 +99,7 @@
             .btn-submit {
                 background-color: $intense-orange;
                 color: #fff;
-                padding: 10px 15px;
+                padding: 15px 0;
                 border: none;
                 border-radius: 5px;
                 font-size: 1rem;
@@ -108,6 +110,93 @@
 
                 &:hover {
                     background-color: $intense-orange;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $breakpoint-md) {
+    .modal-container {    
+        .modal-overlay {
+      
+        }
+    
+        .modal {
+            margin: 0 auto;
+            width: 80%;
+    
+            .close {
+         
+            }
+    
+            .modal-title {
+    
+            }
+    
+            .callback-form {
+               
+    
+                .form-group {
+                   
+                    label {
+                       
+                    }
+    
+                    input[type="text"],
+                    input[type="tel"] {
+                      
+                    }
+    
+                    
+                }
+    
+                .btn-submit {
+                   
+
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $breakpoint-xs) {
+    .modal-container {    
+        .modal-overlay {
+      
+        }
+    
+        .modal {
+            padding: 20px;
+    
+            .close {
+                font-size: 1.2rem;
+            }
+    
+            .modal-title {
+                font-size: 1.2rem;
+            }
+    
+            .callback-form {
+               
+    
+                .form-group {
+                   
+                    label {
+                       
+                    }
+    
+                    input[type="text"],
+                    input[type="tel"] {
+                      
+                    }
+    
+                    
+                }
+    
+                .btn-submit {
+                   
+
                 }
             }
         }

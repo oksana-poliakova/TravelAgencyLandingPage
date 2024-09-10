@@ -51,10 +51,6 @@
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
             transition: transform 0.3s;
 
-            &:hover {
-                transform: scale(1.1);
-            }
-
             &::before, &::after {
                 content: '';
                 position: absolute;
@@ -79,6 +75,10 @@
                     transform: scale(1.8);
                     opacity: 0;
                 }
+            }
+
+            &:hover {
+                transform: scale(1.1);
             }
         
             span {
@@ -334,7 +334,6 @@
                                         0 6px 20px rgba(0, 0, 0, 0.1);
                         }
                     }
-                    
                 }
             }
         }
