@@ -70,3 +70,30 @@
         }
     }
 }
+
+@media (max-width: $breakpoint-md) {
+    .tabs-container {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: $breakpoint-xs) { 
+    .tabs-container {
+        padding: 15px; 
+    }
+
+    .tabs-header {
+        flex-direction: column;
+
+        .tab-btn {
+            font-size: 1rem; 
+            padding: 8px 0;
+        }
+    }
+
+    .tabs-content {
+        .tab-content {
+            padding: 15px; 
+        }
+    }
+}
