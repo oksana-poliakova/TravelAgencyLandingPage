@@ -1,0 +1,1 @@
+document.querySelectorAll(".accordion-header").forEach(e=>{e.addEventListener("click",function(){let c=this.parentElement;c.classList.toggle("active"),document.querySelectorAll(".accordion-item").forEach(e=>{e!==c&&e.classList.remove("active")})})});

@@ -12,6 +12,7 @@
 
 // Import components
 @import 'modal-container.scss';
+@import 'accordion';
 
 
 .overlay {
@@ -401,6 +402,20 @@
             }
         }
 
+        .faq-section {
+            padding: 4rem;
+            display: flex;
+            justify-content: space-between;
+
+            .faq-header {
+                width: 30%;
+
+                h2 {
+                    text-align: left;
+                }
+            }
+        }
+
         .steps {
             padding: 4rem 0 0 0;
             
@@ -419,6 +434,7 @@
                 justify-content: space-between;
                 align-items: flex-start;
                 padding: 4rem 0;
+                padding-bottom: 2rem;
                 position: relative;
 
                 .steps-list {

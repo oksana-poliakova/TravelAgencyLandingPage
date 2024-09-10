@@ -118,54 +118,15 @@
 
 @media (max-width: $breakpoint-md) {
     .modal-container {    
-        .modal-overlay {
-      
-        }
-    
         .modal {
             margin: 0 auto;
             width: 80%;
-    
-            .close {
-         
-            }
-    
-            .modal-title {
-    
-            }
-    
-            .callback-form {
-               
-    
-                .form-group {
-                   
-                    label {
-                       
-                    }
-    
-                    input[type="text"],
-                    input[type="tel"] {
-                      
-                    }
-    
-                    
-                }
-    
-                .btn-submit {
-                   
-
-                }
-            }
         }
     }
 }
 
 @media (max-width: $breakpoint-xs) {
     .modal-container {    
-        .modal-overlay {
-      
-        }
-    
         .modal {
             padding: 20px;
     
@@ -175,29 +136,6 @@
     
             .modal-title {
                 font-size: 1.2rem;
-            }
-    
-            .callback-form {
-               
-    
-                .form-group {
-                   
-                    label {
-                       
-                    }
-    
-                    input[type="text"],
-                    input[type="tel"] {
-                      
-                    }
-    
-                    
-                }
-    
-                .btn-submit {
-                   
-
-                }
             }
         }
     }
