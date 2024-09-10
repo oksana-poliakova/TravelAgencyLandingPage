@@ -10,10 +10,10 @@
 // Import custom styles 
 @import 'swiper-custom.scss';
 
-// Import components
+// Import custom components
 @import 'modal-container.scss';
 @import 'accordion';
-
+@import 'tabs-container.scss';
 
 .overlay {
     position: relative;
