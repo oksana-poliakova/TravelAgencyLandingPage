@@ -7,6 +7,7 @@
     right: 0;
     bottom: 0;
     opacity: 0;
+    z-index: 9998;
     visibility: hidden;
     transition: all 0.3s ease;
 
@@ -21,13 +22,13 @@
         bottom: 0;
         left: 0;
         right: 0;
-        z-index: 1;
+        z-index: 9999;
         background-color: rgba(0, 0, 0, 0.7);
     }
 
     .modal {
         position: relative;
-        z-index: 9999;
+        z-index: 10000;
         background-color: #fff;
         padding: 50px;
         border-radius: 10px;

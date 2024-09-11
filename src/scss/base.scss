@@ -6,13 +6,14 @@
   box-sizing: border-box;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 // Links
 a {
     color: #000;
     text-decoration: none;  
-    &:hover {
-        // color: $secondary-color;
-    }
 }
 
 // Images
@@ -90,15 +91,15 @@ li {
     padding-bottom: 2.5rem;
   }
 
-  .main-text {
+.main-text {
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     color: $primary-color;
     line-height: 1.5;
-  }
+}
 
   .btn {
     font-size: 1rem;
-  }
+}
 
   

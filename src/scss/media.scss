@@ -545,6 +545,12 @@
                     .steps-image-container {
                         width: 80%;
                         padding-left: 3rem;
+
+                        .trip-card {
+                            .trip-image {
+                                margin: 20px 0;
+                            }
+                        }
                     }
                 }
             }

@@ -29,12 +29,12 @@ gulp.task('uglify', function() {
 });
 
 gulp.task('html', function() {
-    return gulp.src(['src/*.html']) // Берем HTML-файлы из src
+    return gulp.src(['src/*.html']) 
       .pipe(fileInclude({
-        prefix: '@@', // Префикс для инклюдов
-        basepath: '@file' // Путь относительно текущего файла
+        prefix: '@@', 
+        basepath: '@file' 
       }))
-      .pipe(gulp.dest('public')); // Сохраняем в папку public
+      .pipe(gulp.dest('public'));
 });
 
 gulp.task('watch', function() {
