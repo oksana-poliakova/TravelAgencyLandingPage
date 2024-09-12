@@ -54,8 +54,8 @@ To run the project locally:
 
 #### iPhone SE (375*667px)
 
-<img width="372" alt="Screenshot 2024-09-12 at 12 24 54" src="https://github.com/user-attachments/assets/060af7c2-abb8-4583-a95a-09bcf992ff81">
 <img width="368" alt="Screenshot 2024-09-12 at 12 23 50" src="https://github.com/user-attachments/assets/d07803a0-fba0-41ff-a783-faffd82c4ce8">
+<img width="372" alt="Screenshot 2024-09-12 at 12 24 54" src="https://github.com/user-attachments/assets/060af7c2-abb8-4583-a95a-09bcf992ff81">
 <img width="371" alt="Screenshot 2024-09-12 at 12 23 56" src="https://github.com/user-attachments/assets/45b5f09d-925b-4ac7-b2d6-0c84c11c270b">
 <img width="372" alt="Screenshot 2024-09-12 at 12 24 15" src="https://github.com/user-attachments/assets/60119a87-65a5-4c82-adf3-fb18e5c206fc">
 <img width="370" alt="Screenshot 2024-09-12 at 12 24 28" src="https://github.com/user-attachments/assets/70e32934-5c58-4a31-a311-cecdad0a261b">
