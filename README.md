@@ -52,7 +52,7 @@ To run the project locally:
 <img width="489" alt="Screenshot 2024-09-12 at 12 20 15" src="https://github.com/user-attachments/assets/91b08f5f-8df0-42ce-a97b-cc4777aac72b">
 <img width="488" alt="Screenshot 2024-09-12 at 12 20 23" src="https://github.com/user-attachments/assets/095b06a9-ad9e-4826-a77b-c559a41a4af3">
 
-#### iPhone SE (375*667px)
+#### iPhone SE 
 
 <img width="368" alt="Screenshot 2024-09-12 at 12 23 50" src="https://github.com/user-attachments/assets/d07803a0-fba0-41ff-a783-faffd82c4ce8">
 <img width="371" alt="Screenshot 2024-09-12 at 12 23 56" src="https://github.com/user-attachments/assets/45b5f09d-925b-4ac7-b2d6-0c84c11c270b">
@@ -61,6 +61,13 @@ To run the project locally:
 <img width="373" alt="Screenshot 2024-09-12 at 12 24 35" src="https://github.com/user-attachments/assets/b70cc1cf-317c-458f-ad5d-539b7a5e777c">
 <img width="371" alt="Screenshot 2024-09-12 at 12 24 46" src="https://github.com/user-attachments/assets/e330adc3-4216-4fbc-adb5-11162d0a9d2d">
 <img width="372" alt="Screenshot 2024-09-12 at 12 24 54" src="https://github.com/user-attachments/assets/060af7c2-abb8-4583-a95a-09bcf992ff81">
+
+#### iPhone 14 Pro Max
+
+<img width="317" alt="Screenshot 2024-09-12 at 12 20 37" src="https://github.com/user-attachments/assets/d4ee04a3-025f-49cb-8dc6-89e71a56b931">
+<img width="322" alt="Screenshot 2024-09-12 at 12 20 50" src="https://github.com/user-attachments/assets/4fd43034-2f73-457a-8668-a96cb1cf3b07">
+<img width="325" alt="Screenshot 2024-09-12 at 12 21 09" src="https://github.com/user-attachments/assets/84d8e7ff-e9fd-497d-a7e4-2a99d7331ebb">
+<img width="321" alt="Screenshot 2024-09-12 at 12 21 25" src="https://github.com/user-attachments/assets/9884da6a-5156-44cc-bec8-6d408e927d6e">
 
 
 
