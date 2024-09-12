@@ -18,23 +18,23 @@ This is a frontend development test project, showcasing a landing page for a tra
 - Gulp
 
 ⚙️ Installation
-To run the project locally:
+To run the project locally
 
 📥 Clone the repository:
 
-git clone https://github.com/oksana-poliakova/TravelAgencyLandingPage
+```git clone https://github.com/oksana-poliakova/TravelAgencyLandingPage```
 
 📂 Navigate to the project directory:
 
-cd travel-agency-landing
+```cd travel-agency-landing```
 
 📦 Install the dependencies:
 
-npm install
+```npm install```
 
 🛠️ Run Gulp to compile SCSS and start the development server:
 
-gulp
+```gulp```
 
 🖼️ Screenshots
 
