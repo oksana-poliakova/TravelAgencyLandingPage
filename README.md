@@ -55,12 +55,12 @@ To run the project locally:
 #### iPhone SE (375*667px)
 
 <img width="368" alt="Screenshot 2024-09-12 at 12 23 50" src="https://github.com/user-attachments/assets/d07803a0-fba0-41ff-a783-faffd82c4ce8">
-<img width="372" alt="Screenshot 2024-09-12 at 12 24 54" src="https://github.com/user-attachments/assets/060af7c2-abb8-4583-a95a-09bcf992ff81">
 <img width="371" alt="Screenshot 2024-09-12 at 12 23 56" src="https://github.com/user-attachments/assets/45b5f09d-925b-4ac7-b2d6-0c84c11c270b">
 <img width="372" alt="Screenshot 2024-09-12 at 12 24 15" src="https://github.com/user-attachments/assets/60119a87-65a5-4c82-adf3-fb18e5c206fc">
 <img width="370" alt="Screenshot 2024-09-12 at 12 24 28" src="https://github.com/user-attachments/assets/70e32934-5c58-4a31-a311-cecdad0a261b">
 <img width="373" alt="Screenshot 2024-09-12 at 12 24 35" src="https://github.com/user-attachments/assets/b70cc1cf-317c-458f-ad5d-539b7a5e777c">
 <img width="371" alt="Screenshot 2024-09-12 at 12 24 46" src="https://github.com/user-attachments/assets/e330adc3-4216-4fbc-adb5-11162d0a9d2d">
+<img width="372" alt="Screenshot 2024-09-12 at 12 24 54" src="https://github.com/user-attachments/assets/060af7c2-abb8-4583-a95a-09bcf992ff81">
 
 
 
