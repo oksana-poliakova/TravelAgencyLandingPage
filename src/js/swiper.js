@@ -3,11 +3,11 @@ const swiper = new Swiper('.swiper', {
     loop: true,
     spaceBetween: 70,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
     },
     pagination: {
-        el: ".swiper-pagination",
-        dynamicBullets: true,
+		el: ".swiper-pagination",
+		dynamicBullets: true,
     },
 });
